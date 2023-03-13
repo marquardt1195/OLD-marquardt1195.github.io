@@ -2,10 +2,27 @@
 output: 
   html_document:
     theme: darkly
-    toc: true
-    toc_float: true
 ---
-
+<style type="text/css">
+.box {
+  height: auto;
+  width: 68%;
+  background-color: hsl(233, 9%, 19%);
+  color: #fff;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.box1 {
+  height: auto;
+  width: 43%;
+  background-color: hsl(233, 9%, 19%);
+  color: #fff;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
@@ -14,7 +31,6 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 
 ```{r, include=FALSE}
 trade_results_final <- read.csv("Trade_Results_2023-csv.csv", na.strings = c("", "NA"))
-#trade_results_final <- read.csv(sprintf("Trade_Results_%s.csv", Sys.Date()))
 ```
 
 
@@ -30,6 +46,8 @@ library(kableExtra)
 library(reactable)
 library(devtools)
 ```
+
+
 
 ```{r Open_posn_Data, echo=FALSE}
 start_bal <- 15264    #Update start balance at start of each year
@@ -131,6 +149,9 @@ df_open_pos <- merge(df_open_pos7, df_open_pos8) %>%
 
 <center>
 ## Open Positions
+
+<div class="box">
+
 ```{r Open_Positions_reactable, echo = FALSE}
 reactable(df_open_pos,
           defaultColDef = colDef(
@@ -171,7 +192,7 @@ reactable(df_open_pos,
           theme = reactableTheme(
             color = "hsl(233, 9%, 87%)",
             backgroundColor = "hsl(233, 9%, 19%)",
-            borderColor = "hsl(233, 9%, 22%)",
+            borderColor = "hsl(233, 9%, 21%)",
             stripedColor = "hsl(233, 12%, 22%)",
             highlightColor = "hsl(233, 12%, 24%)",
             inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
@@ -180,14 +201,17 @@ reactable(df_open_pos,
             pageButtonActiveStyle = list(backgroundColor = "hsl(233, 9%, 28%)")),
           striped = TRUE,
           highlight = TRUE,
-          outlined = TRUE,
           bordered = TRUE,
           width = 600)
 
 ```
+</div>
+
 <br>
 
 ## Recent Trades
+
+<div class="box1">
 ```{r Recent_Trades, echo=FALSE}
 df_recent_trades <- trade_results_final %>% 
   select(trade, stock_name, entries, 
@@ -248,7 +272,7 @@ reactable(df_recent_trades,
          theme = reactableTheme(
           color = "hsl(233, 9%, 87%)",
           backgroundColor = "hsl(233, 9%, 19%)",
-          borderColor = "hsl(233, 9%, 22%)",
+          borderColor = "hsl(233, 9%, 21%)",
           stripedColor = "hsl(233, 12%, 22%)",
           highlightColor = "hsl(233, 12%, 24%)",
           inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
@@ -257,16 +281,13 @@ reactable(df_recent_trades,
           pageButtonActiveStyle = list(backgroundColor = "hsl(233, 9%, 28%)")),
           striped = TRUE,
           highlight = TRUE,
-          outlined = TRUE,
           bordered = TRUE,
           width = 350)
 
 
 ```
+
+</div>
+
 10 most recent trades.
-
-<br>
 </center>
-
-
-

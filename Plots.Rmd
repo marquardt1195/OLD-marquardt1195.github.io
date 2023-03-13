@@ -5,11 +5,20 @@ output:
     toc: true
     toc_float: true
 ---
-
+<style type="text/css">
+.box {
+  height: auto;
+  width: 87%;
+  background-color: #3d688f;
+  color: #fff;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+</style>
 
 ```{r, include=FALSE}
 trade_results_final <- read.csv("Trade_Results_2023-csv.csv", na.strings = c("", "NA"))
-#trade_results_final <- read.csv(sprintf("Trade_Results_%s.csv", Sys.Date()))
 ```
 
 ```{r, include = FALSE}
@@ -81,6 +90,8 @@ df_plot_data4 <- df_plot_data3 %>% #Principal balance $
 ```
 
 ### Profit/Loss %
+
+<div class="box">
 ```{r DONE_pl_percent_plot, echo=FALSE, warning=FALSE}
 ggplot() +
   geom_point(
@@ -116,40 +127,20 @@ ggplot() +
       trim = TRUE)
    )+
   theme(
-  # plot.title = element_text(hjust = 0.5),
-   plot.background = element_rect(fill = "steelblue4", colour = NA),
+   plot.background = element_rect(fill = "#3d688f", colour = NA),
    panel.background = element_rect(fill = "gray85", colour = NA),
    axis.text = element_text(colour = "linen"),
-   axis.title = element_text(colour = "linen"),
-   plot.margin = unit(c(1,1,1,1), "cm"))
-
-
-#Table next to plot
-
-#kable(df_max_min_percent, 
-#    col.names = c("Stock", "P/L %", "P/L %"), 
-#    align = c('c','c', 'c'), 
-#    digits = 2,
-#    caption = "<center>Best and Worst Trades %</center>",
-#    table.attr ="style='width: 30%;'") %>% 
-#  kable_styling(bootstrap_options = c("bordered","condensed"),
-#    position = "float_right",
-#    full_width = FALSE,
-#    font_size = 12)  %>%
-#  column_spec(2:3, 
-#    color = ifelse(df_max_min_percent$Reward >= 0.5, "#00cc00", "#ff3333")) %>%
-#  column_spec(1, 
-#    background = "whitesmoke") %>% 
-#  row_spec(row = 0, 
-#    font_size = 12, 
-#    bold = TRUE, 
-#    background = "#a9c5eb", 
-#    color = "black", 
-#    extra_css = 'vertical-align: middle !important;')
+   axis.title = element_text(colour = "linen")
+)
 ```
+</div>
+
 <br>
 
+
 ### Profit/Loss $
+
+<div class="box">
 ```{r DONE_pl_dollar_plot, echo=FALSE, warning=FALSE}
 ggplot() +
   geom_point(
@@ -180,22 +171,14 @@ ggplot() +
     labels = dollar_format()
   ) +
   theme(
-   plot.title = element_text(hjust = 0.5),
-   plot.background = element_rect(fill = "steelblue4", colour = NA),
+   plot.background = element_rect(fill = "#3d688f", colour = NA),
    panel.background = element_rect(fill = "gray85", colour = NA),
    axis.text = element_text(colour = "linen"),
-   axis.title = element_text(colour = "linen"),
-   plot.margin = unit(c(1,1,1,1), "cm"))
-  
-#geom_label(
-#    data = df_start_dol_principal_label,
-#    aes(trade, dollar_increase_principal, label = dollar_increase_principal)
-#  )+
-#geom_label(
-#    data = df_end_dol_principal_increase_label,
-#    aes(trade, dollar_increase_principal, label = dollar_increase_principal)
-#  )
+   axis.title = element_text(colour = "linen")
+  )
 ```
+</div>
+
 <br>
 
 <kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Marder-Tweet1.jpg){width=33%}</kbd><kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Minervini-Tweet1.jpg){width=33%}</kbd><kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Minervini-Tweet2.jpg){width=31%}</kbd>
@@ -204,6 +187,8 @@ ggplot() +
 <br>
 
 ### Principal Balance
+
+<div class="box">
 ```{r DONE_Principal_bal_plot, echo=FALSE, warning=FALSE}
 ggplot()+
   geom_point(
@@ -234,36 +219,22 @@ ggplot()+
     labels = dollar_format()
   ) +
   theme(
-   plot.background = element_rect(fill = "steelblue4", colour = NA),
+   plot.background = element_rect(fill = "#3d688f", colour = NA),
    panel.background = element_rect(fill = "gray85", colour = NA),
    axis.text = element_text(colour = "linen"),
-   axis.title = element_text(colour = "linen"),
-    plot.margin = unit(c(1,1,1,1), "cm")
+   axis.title = element_text(colour = "linen")
   ) 
 
-#Kable DEPOSIT table
-#kable(df_deposits, 
-#    col.names = c("Date", "Deposit Amount"), 
-#    align = c('c', 'c'), 
-#    digits = 2,
-#    caption = "<center>Deposits</center>",
-#    table.attr ="style='width: 30%;'") %>% 
-#  kable_styling(bootstrap_options = c("bordered","condensed"),
-#    position = "float_right",
-#    full_width = FALSE,
-#    font_size = 14)  %>%
-#  row_spec(row = 0, 
-#    font_size = 14, 
-#    bold = TRUE, 
-#    background = "#a9c5eb", 
-#    color = "black", 
-#    extra_css = 'vertical-align: middle !important;')
 
 ```
+</div>
+
 <br>
 <br>
 
 ### Distribution of Gains & Losses
+
+<div class="box">
 ```{r DONE_distribution_gains_plot, echo = FALSE, warning=FALSE}
 ggplot()+
   geom_histogram(
@@ -299,21 +270,23 @@ ggplot()+
     x = "P/L %"
   ) +
   theme(
-   plot.title = element_text(hjust = 0.5),
-   plot.background = element_rect(fill = "steelblue4", colour = NA),
+   plot.background = element_rect(fill = "#3d688f", colour = NA),
    panel.background = element_rect(fill = "gray85", colour = NA),
    axis.text = element_text(colour = "linen"),
-   axis.title = element_text(colour = "linen"),
-   plot.margin = unit(c(1,1,1,1), "cm")
+   axis.title = element_text(colour = "linen")
     
   )
 ```
+</div>
+
 <br>
 Closed and open positions. Partials included.
 <br>
 <br>
 
 ### Density Curve of Gains & Losses
+
+<div class="box">
 ```{r DONE_density_curve_plot, echo = FALSE, warning=FALSE}
 ggplot() +
   geom_histogram(
@@ -349,13 +322,14 @@ ggplot() +
     x = "P/L %"
   ) +
   theme(
-    plot.title = element_text(hjust = 0.5),
-    plot.background = element_rect(fill = "steelblue4", colour = NA),
+    plot.background = element_rect(fill = "#3d688f", colour = NA),
     panel.background = element_rect(fill = "gray85", colour = NA),
     axis.text = element_text(colour = "linen"),
-    axis.title = element_text(colour = "linen"),
-    plot.margin = unit(c(1,1,1,1), "cm"))
+    axis.title = element_text(colour = "linen")
+    )
 ```
+</div>
+
 <br>
 <br>
 

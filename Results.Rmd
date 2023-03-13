@@ -2,10 +2,37 @@
 output: 
   html_document:
     theme: darkly
-    toc: true
-    toc_float: true
 ---
 
+<style type="text/css">
+.box {
+  height: auto;
+  width: 74%;
+  background-color: hsl(233, 9%, 19%);
+  color: hsl(233, 9%, 87%);
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.box1 {
+  height: auto;
+  width: 91%;
+  background-color: hsl(233, 9%, 19%);
+  color: hsl(233, 9%, 87%);
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.box2 {
+  height: auto;
+  width: 100%;
+  background-color: hsl(233, 9%, 19%);
+  color: hsl(233, 9%, 87%);
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+</style>
 
 ```{r, include=FALSE}
 trade_results_final <- read.csv("Trade_Results_2023-csv.csv", na.strings = c("", "NA"))
@@ -47,6 +74,8 @@ df_open_pos1 <- trade_results_final %>%
 <center>
 
 ### Key Metrics
+
+<div class="box">
 ```{r NEW_key_metrics_data, echo=FALSE, warning=FALSE, include=FALSE}
 df_total_data1 <- df_open_pos1 %>% 
    select(trade, stock_name, 
@@ -99,11 +128,13 @@ df_total_data <- data.frame(avg_percent_gain,
                             adjusted_win_loss)
 ```
 
+
+
 ```{r NEW_key_metrics_table, echo=FALSE, warning=FALSE}
 options(reactable.theme = reactableTheme(
   color = "hsl(233, 9%, 87%)",
   backgroundColor = "hsl(233, 9%, 19%)",
-  borderColor = "hsl(233, 9%, 22%)",
+  borderColor = "hsl(233, 9%, 21%)",
   stripedColor = "hsl(233, 12%, 22%)",
   highlightColor = "hsl(233, 12%, 24%)",
   inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
@@ -137,6 +168,8 @@ reactable(df_total_data,
           bordered = TRUE,
           width = 650)
 ```
+</div>
+
 <br>
 
 ### Total 
@@ -240,6 +273,8 @@ df_total_table <- data.frame(closed_pl_dollar,
 
 ```
 
+<div class="box1">
+
 ```{r NEW_total_table, echo=FALSE, warning=FALSE}
 reactable(df_total_table,
           defaultColDef = colDef(
@@ -294,7 +329,7 @@ reactable(df_total_table,
           theme = reactableTheme(
             color = "hsl(233, 9%, 87%)",
             backgroundColor = "hsl(233, 9%, 19%)",
-            borderColor = "hsl(233, 9%, 22%)",
+            borderColor = "hsl(233, 9%, 21%)",
             stripedColor = "hsl(233, 12%, 22%)",
             highlightColor = "hsl(233, 12%, 24%)",
             inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
@@ -309,6 +344,8 @@ reactable(df_total_table,
 
 
 ```
+</div>
+
 <br>
 
 ### Monthly
@@ -466,6 +503,8 @@ df_nested_monthly_data <- merge(df_monthly_wins, df_monthly_losses, all = TRUE) 
                                       arrange(match(month, month.name))
 ```
 
+<div class="box2">
+
 ```{r NEW_monthly_table, echo=FALSE, warning = FALSE}
 reactable(df_monthly_data,
           defaultColDef = colDef(
@@ -510,18 +549,17 @@ reactable(df_monthly_data,
           theme = reactableTheme(
             color = "hsl(233, 9%, 87%)",
             backgroundColor = "hsl(233, 9%, 19%)",
-            borderColor = "hsl(233, 9%, 22%)",
+            borderColor = "hsl(233, 9%, 21%)",
             stripedColor = "hsl(233, 12%, 22%)",
             highlightColor = "hsl(233, 12%, 24%)",
             inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
             selectStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
             pageButtonHoverStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
             pageButtonActiveStyle = list(backgroundColor = "hsl(233, 9%, 28%)")),
-          searchable = TRUE, 
           resizable = TRUE,
           showSortable = TRUE, 
           showSortIcon = TRUE, 
-          bordered = TRUE, 
+          bordered = TRUE,
           highlight = TRUE, 
           striped = TRUE, 
           showPageSizeOptions = TRUE, 
@@ -568,6 +606,6 @@ reactable(df_nested1, outlined = TRUE,
     )
 )
 ```
-<br>
+</div>
 
 </center>

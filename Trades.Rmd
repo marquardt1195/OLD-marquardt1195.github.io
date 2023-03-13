@@ -2,9 +2,18 @@
 output: 
   html_document:
     theme: darkly
-    toc: true
-    toc_float: true
 ---
+<style type="text/css">
+.box {
+  height: auto;
+  width: auto;
+  background-color: hsl(233, 9%, 19%);
+  color: #fff;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 3%;
+}
+</style>
 
 ```{r, include=FALSE}
 trade_results_final <- read.csv("Trade_Results_2023-csv.csv", na.strings = c("", "NA"))
@@ -26,6 +35,8 @@ library(devtools)
 <br>
 
 ### All Trades
+
+<div class="box">
 
 <center>
 ```{r All_trades_data, warning=FALSE, include=FALSE}
@@ -171,7 +182,7 @@ reactable(df_nested_trade1, outlined = TRUE,
           theme = reactableTheme(
             color = "hsl(233, 9%, 95%)",
             backgroundColor = "#336699",
-            borderColor = "hsl(233, 9%, 22%)",
+            borderColor = "hsl(233, 9%, 19%)",
             stripedColor = "hsl(233, 12%, 22%)",
             highlightColor = "hsl(233, 12%, 24%)",
             inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
@@ -189,3 +200,4 @@ Closed AND open positions. Includes partials.
 
 </center>
 
+</div>

@@ -2,14 +2,21 @@
 output: 
   html_document:
     theme: darkly
-    toc: true
-    toc_float: true
 ---
 
 <style type="text/css">
   body{
   font-size: 11pt;
   font-family: Arial
+}
+.box {
+  height: auto;
+  width: 100%;
+  background-color: hsl(233, 9%, 20%);
+  color: hsl(233, 9%, 87%);
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
 }
 </style>
 
@@ -23,7 +30,15 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("figures/red.png")
 ```
 
+<div class="box">
+
 ## Journal
+<br><span style="color:#FFFF99">*3/13/2023*</span><br>
+
+
+
+***
+
 <br><span style="color:#FFFF99">*2/27/2023*</span><br>
 
 A lot of reversals today with a small list of names setting up/breaking out. Also noticing a lot of bearish looking flags on the right sides of bases. Notable reversals on focus list include: CECO, TMUS, AXON, UPFT, GPC, VTYX, OCN, AGCO. Worth noting that both the SPY and QQQ's closed low in their range.
@@ -50,4 +65,4 @@ Down about 2.5%, or ~$360, as of this writing.
 ![](figures/AXON.png){width=49%}
 ![](figures/PRDO.png){width=49%}
 
-***
+</div>

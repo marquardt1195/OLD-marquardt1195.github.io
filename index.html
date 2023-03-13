@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -222,69 +219,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -292,16 +226,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -334,6 +258,9 @@ div.tocify {
   <a href="Plots.html">Plots</a>
 </li>
 <li>
+  <a href="MPA.html">MPA</a>
+</li>
+<li>
   <a href="Models.html">Models</a>
 </li>
       </ul>
@@ -357,6 +284,15 @@ div.tocify {
   font-size: 11pt;
   font-family: Arial
 }
+.box {
+  height: auto;
+  width: 100%;
+  background-color: hsl(233, 9%, 20%);
+  color: hsl(233, 9%, 87%);
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
 </style>
 <div class="figure" style="text-align: right">
 <img src="figures/red.png" alt="Stock Feedback" width="13%" />
@@ -364,8 +300,10 @@ div.tocify {
 Stock Feedback
 </p>
 </div>
-<div id="journal" class="section level2">
+<div id="journal" class="section level2 box">
 <h2>Journal</h2>
+<p><br><span style="color:#FFFF99"><em>3/13/2023</em></span><br></p>
+<hr />
 <p><br><span style="color:#FFFF99"><em>2/27/2023</em></span><br></p>
 <p>A lot of reversals today with a small list of names setting up/breaking out. Also noticing a lot of bearish looking flags on the right sides of bases. Notable reversals on focus list include: CECO, TMUS, AXON, UPFT, GPC, VTYX, OCN, AGCO. Worth noting that both the SPY and QQQ’s closed low in their range.</p>
 <p>Interested to see what happens in these ‘bearish flags’ like: SANM, HROW, KLAC, TMUS, FLEX, . Are they tightening and consolidating or bracing to move lower? Feels like they’ll go lower considering how poorly stocks have been acting. Lots of names breaking down/experiencing volatility: BELFB, BDC, IT, ALNY, TH, RELL, GILD, BIIB, ARRY, APH, PODD, IMCR. It’s hard to get excited in this market. Rotation is fierce and breakouts to new highs simply aren’t working. The bids dry up. Sometimes within minutes. Watching AEHR, MTZ, OCN, EPAC, ATRO, AGCO, and BOWL closely for anything promising. Earnings coming up in quite a few names.</p>
@@ -379,14 +317,11 @@ Stock Feedback
 <p>In hindsight I can see how the ‘breadth thrust’ and new wave of setups made me overly eager to get into the market. Both Mark’s were buying and admit to being down slightly (1-2%) so far this year. I’m right there with them, so I’m not too upset about the performance because I remained conservative and adhered to stops. But this latest run taught me that I’m not reflecting/synthesizing the market feedback enough each day. Hence, the advent of my STEM model and journal.</p>
 <p>Down about 2.5%, or ~$360, as of this writing.</p>
 <p><img src="figures/AXON.png" style="width:49.0%" /> <img src="figures/PRDO.png" style="width:49.0%" /></p>
-<hr />
 </div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -419,35 +354,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

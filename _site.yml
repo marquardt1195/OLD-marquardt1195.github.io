@@ -12,6 +12,8 @@ navbar:
       href: Results.html
     - text: "Plots"
       href: Plots.html
+    - text: "MPA"
+      href: MPA.html
     - text: "Models"
       href: Models.html
 output_dir: docs
