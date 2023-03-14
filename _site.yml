@@ -3,7 +3,7 @@ navbar:
   title: "<img src=\"figures/Rstudio_logo.png\" style=\"float: left;\" width=\"80px\"/>"
   left:
     - text: "Journal"
-      href: index.html
+      href: Journal.html
     - text: "Positions"
       href: Positions.html
     - text: "Trades"
