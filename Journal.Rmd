@@ -13,8 +13,8 @@ output:
   height: auto;
   width: 100%;
   background-color: hsl(233, 9%, 20%);
-  color: hsl(233, 9%, 87%);
-  padding: 10px;
+  color: hsl(233, 9%, 95%);
+  padding: 30px;
   border: solid 1px black;
   border-radius: 10px;
 }
@@ -41,7 +41,7 @@ Some interesting and mostly negative developments include: Major distribution in
 
 Sitting on the sidelines for the time being. Not interested in being the first to this party. Feels like we have a ways to go with this bear market. Staying engaged and ready.
 
-Focus list: AEHR, FSLR, ARRY, PODD, EPAC, AAON, CECO, BOWL, ACLS, HROW, ESP, TMUS, MSI, MNST, TH, TRI, AQUA, LMB, MCHP, ADI, STM, WING, COCO 
+Focus list: AEHR, FSLR, ARRY, PODD, EPAC, AAON, CECO, BOWL, ACLS, HROW, ESP, TMUS, MSI, MNST, TH, TRI, AQUA, LMB, MCHP, ADI, STM, WING, COCO. List added to index page today.
 
 ***
 

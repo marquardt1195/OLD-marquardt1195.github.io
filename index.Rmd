@@ -34,11 +34,20 @@ library(kableExtra)
 library(reactable)
 library(DT)
 library(data.table)
+library(tidyverse)
 ```
 
 
 ```{r, echo=FALSE}
-focus <- data.table(c("AEHR", "FSLR", "ARRY", "PODD", "EPAC", "AAON", "CECO", "BOWL", "ACLS"), c("HROW", "ESP", "TMUS", "MSI", "MNST", "TH", "TRI", "AQUA", "LMB", "MCHP"), c("ADI", "STM", "WING", "COCO"))
+focus1 <- c("AEHR", "FSLR", "ARRY", "PODD", "EPAC", "AAON", "CECO", "BOWL", "ACLS", "HROW")
+focus2 <- c("ESP", "TMUS", "MSI", "MNST", "TH", "TRI", "AQUA", "LMB", "MCHP", "CDNS")
+focus3 <- c("ADI", "STM", "WING", "COCO")
+
+n <- max(length(focus1), length(focus2), length(focus3))
+
+focus4 <- data.table(focus1 = focus1[1:n], focus2 = focus2[1:n],focus3 = focus3[1:n])
+
+
 ```
 
 
@@ -49,15 +58,15 @@ focus <- data.table(c("AEHR", "FSLR", "ARRY", "PODD", "EPAC", "AAON", "CECO", "B
 
 <div class="box">
 ```{r, echo=FALSE}
-reactable(focus,
+reactable(focus4,
             defaultColDef = colDef(
             align = "center"),
           columns = list(
-            V1 = colDef(name = "-----", 
+            focus1 = colDef(name = "-----", 
                            width = 75),
-            V2 = colDef(name = "-----", 
+            focus2 = colDef(name = "-----", 
                            width = 75),
-            V3 = colDef(name = "-----", 
+            focus3 = colDef(name = "-----", 
                            width = 75)),
           theme = reactableTheme(
             color = "hsl(233, 9%, 87%)",

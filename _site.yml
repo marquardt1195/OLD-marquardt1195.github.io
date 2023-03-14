@@ -2,18 +2,20 @@ name: "Results"
 navbar:
   title: "<img src=\"figures/Rstudio_logo.png\" style=\"float: left;\" width=\"80px\"/>"
   left:
-    - text: "Journal"
+    - text: "JOURNAL"
       href: Journal.html
-    - text: "Positions"
+    - text: "POSITIONS"
       href: Positions.html
-    - text: "Trades"
-      href: Trades.html
-    - text: "Results"
-      href: Results.html
-    - text: "Plots"
-      href: Plots.html
+    - text: "ANALYTICS"
+      menu:
+      - text: "Trades"
+        href: Trades.html
+      - text: "Results"
+        href: Results.html
+      - text: "Plots"
+        href: Plots.html
     - text: "MPA"
       href: MPA.html
-    - text: "Models"
+    - text: "MODELS"
       href: Models.html
 output_dir: docs
