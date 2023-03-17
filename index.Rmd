@@ -18,6 +18,10 @@ output:
   border: solid 1px black;
   border-radius: 10px;
 }
+img[src$="#round"] {
+  margin: 0px;
+  border-radius: 5px;
+}
 </style>
 
 
@@ -39,9 +43,9 @@ library(tidyverse)
 
 
 ```{r, echo=FALSE}
-focus1 <- c("AEHR", "FSLR", "ARRY", "PODD", "EPAC", "AAON", "CECO", "BOWL", "ACLS", "HROW")
-focus2 <- c("ESP", "TMUS", "MSI", "MNST", "TH", "TRI", "AQUA", "LMB", "MCHP", "CDNS")
-focus3 <- c("ADI", "STM", "WING", "COCO")
+focus1 <- c("AEHR", "FSLR", "ARRY", "PODD", "EPAC", "AAON", "MCHP", "ACLS", "HROW")
+focus2 <- c("ESP", "TMUS", "MSI", "MNST", "TH", "TRI", "AQUA", "LMB", "BOWL", "CDNS")
+focus3 <- c("ADI", "STM", "WING", "COCO", "REGN", "ON", "TXRH", "RETA")
 
 n <- max(length(focus1), length(focus2), length(focus3))
 
@@ -49,7 +53,6 @@ focus4 <- data.table(focus1 = focus1[1:n], focus2 = focus2[1:n],focus3 = focus3[
 
 
 ```
-
 
 
 <center>
@@ -86,4 +89,29 @@ reactable(focus4,
 
 </div>
 
+<br>
+
+### WEEKLY CHARTS TO WATCH
+
+<center>ADI, FTNT, MCHP </center>
+[![ADI](figures/focus/ADI-weekly-focus.png#round){.img-thumbnail width=33%}](figures/focus/ADI-weekly-focus.png#round)
+[![FTNT](figures/focus/FTNT-weekly-focus.png#round){.img-thumbnail width=33%}](figures/focus/FTNT-weekly-focus.png#round)
+[![MCHP](figures/focus/MCHP-weekly-focus.png#round){.img-thumbnail width=33%}](figures/focus/MCHP-weekly-focus.png#round)
+
+<center>MSI, TRI, TSCO</center>
+[![MSI](figures/focus/MSI-weekly-focus.png#round){.img-thumbnail width=33%}](figures/focus/MSI-weekly-focus.png#round)
+[![TRI](figures/focus/TRI-weekly-focus.png#round){.img-thumbnail width=33%}](figures/focus/TRI-weekly-focus.png#round)
+[![TSCO](figures/focus/TSCO-weekly-focus.png#round){.img-thumbnail width=33%}](figures/focus/TSCO-weekly-focus.png#round)
+
+***
+
+
 </center>
+
+![](figures\Minervini-Tweet4.jpg#round){width=33%}
+![](figures\Marder-Tweet2.jpg#round){width=33%}
+![](figures\Minervini-Tweet2.jpg#round){width=33%}
+
+![](figures\Minervini-Tweet1.jpg#round){width=33%}
+![](figures\Marder-Tweet1.jpg#round){width=33%}
+![](figures\Trader.jpg#round){width=33%}

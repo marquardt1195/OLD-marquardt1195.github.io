@@ -39,6 +39,8 @@
 <script src="site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
 <link href="site_libs/reactable-0.4.3/reactable.css" rel="stylesheet" />
 <script src="site_libs/reactable-binding-0.4.3/reactable.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -250,13 +252,23 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="Journal.html">JOURNAL</a>
+  <a href="Journal.html">
+    <span class="far fa-calendar-check"></span>
+     
+    JOURNAL
+  </a>
 </li>
 <li>
-  <a href="Positions.html">POSITIONS</a>
+  <a href="Positions.html">
+    <span class="fas fa-chart-line"></span>
+     
+    POSITIONS
+  </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="far fa-chart-bar"></span>
+     
     ANALYTICS
      
     <span class="caret"></span>
@@ -274,10 +286,18 @@ $(document).ready(function () {
   </ul>
 </li>
 <li>
-  <a href="MPA.html">MPA</a>
+  <a href="MPA.html">
+    <span class="fas fa-headphones-alt"></span>
+     
+    MPA
+  </a>
 </li>
 <li>
-  <a href="Models.html">MODELS</a>
+  <a href="Models.html">
+    <span class="fas fa-seedling"></span>
+     
+    MODELS
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -309,6 +329,10 @@ $(document).ready(function () {
   border: solid 1px black;
   border-radius: 10px;
 }
+img[src$="#round"] {
+  margin: 0px;
+  border-radius: 5px;
+}
 </style>
 <div class="figure" style="text-align: right">
 <img src="figures/red.png" alt="Stock Feedback" width="12%" />
@@ -320,10 +344,25 @@ Stock Feedback
 <div id="focus-list" class="section level3">
 <h3>FOCUS LIST</h3>
 <div class="box">
-<div id="htmlwidget-97e4e9cc063c4e2343c3" class="reactable html-widget " style="width:230px;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-97e4e9cc063c4e2343c3">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"focus1":["AEHR","FSLR","ARRY","PODD","EPAC","AAON","CECO","BOWL","ACLS","HROW"],"focus2":["ESP","TMUS","MSI","MNST","TH","TRI","AQUA","LMB","MCHP","CDNS"],"focus3":["ADI","STM","WING","COCO",null,null,null,null,null,null]},"columns":[{"id":"focus1","name":"-----","type":"character","align":"center","width":75},{"id":"focus2","name":"-----","type":"character","align":"center","width":75},{"id":"focus3","name":"-----","type":"character","align":"center","width":75}],"highlight":true,"bordered":true,"striped":true,"width":"230px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"2fa94a594119c03c4bb79c544d76de92"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c02e3a0ff4ea577da21f" class="reactable html-widget " style="width:230px;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c02e3a0ff4ea577da21f">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"focus1":["AEHR","FSLR","ARRY","PODD","EPAC","AAON","MCHP","ACLS","HROW",null],"focus2":["ESP","TMUS","MSI","MNST","TH","TRI","AQUA","LMB","BOWL","CDNS"],"focus3":["ADI","STM","WING","COCO","REGN","ON","TXRH","RETA",null,null]},"columns":[{"id":"focus1","name":"-----","type":"character","align":"center","width":75},{"id":"focus2","name":"-----","type":"character","align":"center","width":75},{"id":"focus3","name":"-----","type":"character","align":"center","width":75}],"highlight":true,"bordered":true,"striped":true,"width":"230px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"4d8ab3c145e7757caa9ed954db57c306"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
+<p><br></p>
+</div>
+<div id="weekly-charts-to-watch" class="section level3">
+<h3>WEEKLY CHARTS TO WATCH</h3>
+<center>
+ADI, FTNT, MCHP
 </center>
+<p><a href="figures/focus/ADI-weekly-focus.png#round"><img src="figures/focus/ADI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="ADI" /></a> <a href="figures/focus/FTNT-weekly-focus.png#round"><img src="figures/focus/FTNT-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="FTNT" /></a> <a href="figures/focus/MCHP-weekly-focus.png#round"><img src="figures/focus/MCHP-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="MCHP" /></a></p>
+<center>
+MSI, TRI, TSCO
+</center>
+<p><a href="figures/focus/MSI-weekly-focus.png#round"><img src="figures/focus/MSI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="MSI" /></a> <a href="figures/focus/TRI-weekly-focus.png#round"><img src="figures/focus/TRI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="TRI" /></a> <a href="figures/focus/TSCO-weekly-focus.png#round"><img src="figures/focus/TSCO-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="TSCO" /></a></p>
+<hr />
+</center>
+<p><img src="figures\Minervini-Tweet4.jpg#round" style="width:33.0%" /> <img src="figures\Marder-Tweet2.jpg#round" style="width:33.0%" /> <img src="figures\Minervini-Tweet2.jpg#round" style="width:33.0%" /></p>
+<p><img src="figures\Minervini-Tweet1.jpg#round" style="width:33.0%" /> <img src="figures\Marder-Tweet1.jpg#round" style="width:33.0%" /> <img src="figures\Trader.jpg#round" style="width:33.0%" /></p>
 </div>
 
 

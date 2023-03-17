@@ -2,11 +2,14 @@ name: "Results"
 navbar:
   title: "<img src=\"figures/Rstudio_logo.png\" style=\"float: left;\" width=\"80px\"/>"
   left:
-    - text: "JOURNAL"
+    - icon: "far fa-calendar-check"
+      text: "JOURNAL"
       href: Journal.html
-    - text: "POSITIONS"
+    - icon: "fas fa-chart-line"
+      text: "POSITIONS"
       href: Positions.html
-    - text: "ANALYTICS"
+    - icon: "far fa-chart-bar"
+      text: "ANALYTICS"
       menu:
       - text: "Trades"
         href: Trades.html
@@ -14,8 +17,10 @@ navbar:
         href: Results.html
       - text: "Plots"
         href: Plots.html
-    - text: "MPA"
+    - icon: "fas fa-headphones-alt"
+      text: "MPA"
       href: MPA.html
-    - text: "MODELS"
+    - icon: "fas fa-seedling"
+      text: "MODELS"
       href: Models.html
 output_dir: docs

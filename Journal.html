@@ -32,6 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -243,13 +245,23 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="Journal.html">JOURNAL</a>
+  <a href="Journal.html">
+    <span class="far fa-calendar-check"></span>
+     
+    JOURNAL
+  </a>
 </li>
 <li>
-  <a href="Positions.html">POSITIONS</a>
+  <a href="Positions.html">
+    <span class="fas fa-chart-line"></span>
+     
+    POSITIONS
+  </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="far fa-chart-bar"></span>
+     
     ANALYTICS
      
     <span class="caret"></span>
@@ -267,10 +279,18 @@ $(document).ready(function () {
   </ul>
 </li>
 <li>
-  <a href="MPA.html">MPA</a>
+  <a href="MPA.html">
+    <span class="fas fa-headphones-alt"></span>
+     
+    MPA
+  </a>
 </li>
 <li>
-  <a href="Models.html">MODELS</a>
+  <a href="Models.html">
+    <span class="fas fa-seedling"></span>
+     
+    MODELS
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -293,6 +313,13 @@ $(document).ready(function () {
   font-size: 11pt;
   font-family: Arial
 }
+img[src$="#round"] {
+  margin: 0px;
+  border-radius: 5px;
+}
+img:hover {
+  opacity: 0.9;
+}
 .box {
   height: auto;
   width: 100%;
@@ -302,36 +329,89 @@ $(document).ready(function () {
   border: solid 1px black;
   border-radius: 10px;
 }
+details > summary {
+    list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '▶️';
+}
+
+details[open] > summary::before {
+    content: '🔽';
+}
+
+details {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
 </style>
 <div class="figure" style="text-align: right">
-<img src="figures/red.png" alt="Stock Feedback" width="12%" />
+<img src="figures/red.png" alt="Stock Feedback" width="11.5%" />
 <p class="caption">
 Stock Feedback
 </p>
 </div>
-<div id="journal" class="section level2 box">
-<h2>Journal</h2>
-<p><br><span style="color:#FFFF99"><em>3/13/2023</em></span><br></p>
+<div class="box">
+
+<p><span style="color:#FFFF99"><em>3/17/2023</em></span></p>
+<hr />
+<p><span style="color:#FFFF99"><em>3/16/2023</em></span></p>
+<p>First Republic Bank announced they were struggling this morning. The list now includes: SVB, Silvergate Capital, Signature Bank, Credit Suisse, and First Republic. The explanation according to Mark, “The FED has been aggressively tightening rates and this has caused many depositors to wake up and realize that they can earn far more yield in treasuries than leaving them deposited at their local bank, thus causing a run on deposits. The FED has since created its BTFD program to help stem any liquidity issues banks may be having, but the headlines continue to be unsettling.”</p>
+<p>Support has been coming in on the indexes but it’s from an oversold condition (QQQ’s weren’t oversold and look best). Not much out there that looks appetizing. We saw a decent setup and move in TSCO this morning. ANET, CDNS, and TXRH all made nice moves (to new high’s) from decent bases today. Expecting near-term volatility.</p>
+<p>Noticing big declines in groups that were previously outperforming: machinery, manufacturing, and industrial services. Updated weekly charts to watch on index page.</p>
+<p><a href="figures/QQQ-3-16-2023.png#round"><img src="figures/QQQ-3-16-2023.png#round" class="img-thumbnail" style="width:49.0%" alt="QQQ" /></a></p>
+<hr />
+<p><span style="color:#FFFF99"><em>3/15/2023</em></span></p>
+<p>Stocks that I traffic look sloppy and volatile. Hardly anything to entertain. Biggest movers today came from junk off the lows.</p>
+<p>Seeing some supportive volume on the SPY and QQQ the last 2-3 days. IWM not looking as good. Crude oil prices broke a 6-month channel to the downside and dropped to its lowest level since January 2022. Seeing some technology stocks getting bids. However, some blowups as well. LUNA is an example. Contrarily, names like BJ and TSCO looking good and clearly getting bids. I think this points to the uncertainty of the market right now. No real trends, lots of rotation. Sidelined and 100% cash.</p>
+<p><a href="figures/USO_2023-03-15.png#round"><img src="figures/USO_2023-03-15.png#round" class="img-thumbnail" style="width:33.0%" alt="USO" /></a> <a href="figures/FebCPI.png#round"><img src="figures/FebCPI.png#round" class="img-thumbnail" style="width:33.0%" alt="CPI" /></a> <a href="figures/VIX_3-15-2023.png#round"><img src="figures/VIX_3-15-2023.png#round" class="img-thumbnail" style="width:33.0%" alt="VIX" /></a></p>
+<hr />
+<p><span style="color:#FFFF99"><em>3/14/2023</em></span></p>
+<p>CPI release this morning and the market opened on a gap. Volatility is the word of the week for the stock market and I am practicing extreme caution in these uncertain times. Here’s a note from Mark this morning which provides more color:</p>
+<p>Mark:</p>
+<p>In panic fashion, the 2-year yield fell 100bps in just the last three trading sessions, the fastest drop in over 35 years since the Black Monday Crash of 1987. As a result - like Nomura - some have drastically changed their economic and Fed forecasts.</p>
+<p>While it’s premature to predict whether the recent banking crisis will trump CPI and PPI data coming out this week and influence the Fed, the expectation for a rate hike has indeed shifted slightly on the side of a pause. One thing is pretty certain, economic data due out over the next two days will likely fuel more volatility.</p>
+<p>Follow <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html">this link</a>, which estimates the probabilities of Fed Funds Rate.</p>
+<p>In an effort to contain the spread of contagion from the SVB collapse, the Fed launched a new lending program late Sunday. The creation of the Fed’s new Bank Term Funding Program (BTFP) is designed to halt bank runs of stressed financial institutions. Eligible depositories can now borrow for up to one year pledging Treasurys and agency MBS, which will be valued at par. That plugs a $620 billion hole created by the unrealized losses on securities holdings.</p>
+<p>The structure is similar to those rolled out during the pandemic and during the GFC. The Treasury will provide $25 billion in capital from the Exchange Stabilization fund as a backup. As has been done previously, any losses to the Deposit Insurance Fund will be covered by a special assessment on banks, not taxpayers. Additionally, the government will fully protect both insured and uninsured depositors of SVB and of Signature Bank, which was closed on Sunday. Reminiscent of the Bear Stearns rescue by J.P. Morgan in March 2008, this should help limit the collateral damage to the economy and allow companies to meet payroll and other obligations.</p>
+<p>The big question is, does the collapse in the 1-year and 2-year yields indicate the tightening cycle is over as I have long been predicting is the “canary in the coal mine.” I doubt it. And if so, for the wrong reasons.</p>
+<p><a href="figures/US01Y_2023-03-15.png#round"><img src="figures/US01Y_2023-03-15.png#round" class="img-thumbnail" style="width:49.0%" alt="1-year yield" /></a> <a href="figures/US02Y_2023-03-15.png#round"><img src="figures/US02Y_2023-03-15.png#round" class="img-thumbnail" style="width:49.0%" alt="2-year yield" /></a></p>
+<hr />
+<p><span style="color:#FFFF99"><em>3/13/2023</em></span></p>
 <p>Have taken some time away from the markets. Sold the last of VC on 2/28 just before trip with the boys and it turned out to be a great time to be away. The market saw major volatility during the past two weeks and individual stocks have been breaking down. Many pivot failures and a considerable amount of base failures. Looking back on my recent trades, stop losses have saved me from a lot of turmoil. Everything is lower than my sell points with the exception of: AXON, RXDX, and FRHC. <b>That means 13 of 16 stocks broke down after setting up.</b> This tells the whole story.</p>
-<p>Some interesting and mostly negative developments include: Major distribution in the major averages. IWM, SPY, QQQ, and FFTY all got hit hard and the prospect of the indexes going lower doesn’t seem far fetched. VIX spiked up again. SVB collapse and many banking stocks getting hit hard. Is this the start of something more serious? XLF has gotten clobbered; along with many other industries including XLE, XBI, XLE, XLB, and XME. FFTY barely above its lows. Interestingly, the yields have all taken big hits over the past 2-days. The 1-year got wrecked today. Would love to see this break down long-term. TAN coiling on the weekly. Will it break to the upside? <b>FSLR, MAXN, ARRY</b> all look pretty good.</p>
+<p>Some interesting and mostly negative developments include: Major distribution in the major averages. IWM, SPY, QQQ, and FFTY all got hit hard and the prospect of the indexes going lower doesn’t seem far fetched. VIX spiked up again. SVB collapse and many banking stocks getting hit hard. Is this the start of something more serious? XLF has gotten clobbered; along with many other industries including XLE, XBI, XLE, XLB, and XME. FFTY barely above its lows. Interestingly, the yields have all taken big hits over the past 2-days. The 1-year got wrecked today. Would love to see this break down long-term. TAN coiling on the weekly. Will it break to the upside? <b>FSLR, MAXN, ARRY</b> all look pretty good. Metals, steels, precious metals,</p>
 <p>Sitting on the sidelines for the time being. Not interested in being the first to this party. Feels like we have a ways to go with this bear market. Staying engaged and ready.</p>
 <p>Focus list: AEHR, FSLR, ARRY, PODD, EPAC, AAON, CECO, BOWL, ACLS, HROW, ESP, TMUS, MSI, MNST, TH, TRI, AQUA, LMB, MCHP, ADI, STM, WING, COCO. List added to index page today.</p>
+<p><a href="figures/XLF_2023-03-15.png#round"><img src="figures/XLF_2023-03-15.png#round" class="img-thumbnail" style="width:49.0%" alt="XLF" /></a> <a href="figures/XSD_2023-03-15.png#round"><img src="figures/XSD_2023-03-15.png#round" class="img-thumbnail" style="width:49.0%" alt="XSD" /></a></p>
+</details>
 <hr />
-<p><br><span style="color:#FFFF99"><em>2/27/2023</em></span><br></p>
+<details>
+<summary>
+Week of 2/26 - 3/4
+</summary>
+<p><span style="color:#FFFF99"><em>2/27/2023</em></span></p>
 <p>A lot of reversals today with a small list of names setting up/breaking out. Also noticing a lot of bearish looking flags on the right sides of bases. Notable reversals on focus list include: CECO, TMUS, AXON, UPFT, GPC, VTYX, OCN, AGCO. Worth noting that both the SPY and QQQ’s closed low in their range.</p>
 <p>Interested to see what happens in these ‘bearish flags’ like: SANM, HROW, KLAC, TMUS, FLEX, . Are they tightening and consolidating or bracing to move lower? Feels like they’ll go lower considering how poorly stocks have been acting. Lots of names breaking down/experiencing volatility: BELFB, BDC, IT, ALNY, TH, RELL, GILD, BIIB, ARRY, APH, PODD, IMCR. It’s hard to get excited in this market. Rotation is fierce and breakouts to new highs simply aren’t working. The bids dry up. Sometimes within minutes. Watching AEHR, MTZ, OCN, EPAC, ATRO, AGCO, and BOWL closely for anything promising. Earnings coming up in quite a few names.</p>
 <hr />
-<p><br><span style="color:#FFFF99"><em>2/26/2023</em></span><br> Personal STEM model created and set to red today. This is influenced by the recent change to red (on 2/23/2023) on the MPA platform but is, and will continue to be, based on my personal ‘feel’ of the market. My feel for the market is based primarily on feedback and amount of pressure from recent trades. Thus far, 2023 has been very similar to 2022 in that breakouts are not working. Volatility is too high for low-risk entries. Discipline and sit-out power will reign.</p>
+<p><span style="color:#FFFF99"><em>2/26/2023</em></span> Personal STEM model created and set to red today. This is influenced by the recent change to red (on 2/23/2023) on the MPA platform but is, and will continue to be, based on my personal ‘feel’ of the market. My feel for the market is based primarily on feedback and amount of pressure from recent trades. Thus far, 2023 has been very similar to 2022 in that breakouts are not working. Volatility is too high for low-risk entries. Discipline and sit-out power will reign.</p>
 <p>Big moves: FIX, TMDX, EME, ATKR, ALG</p>
-<div id="reflection" class="section level5">
-<h5><u>2023 Reflection:</u></h5>
-<p>My portfolio saw some volatility early on in SLGN and QSR. These were the first warning signs that I didn’t take seriously enough. At that time, my largest position was XLE which began working immediately and looked promising. With 1 of 3 names working and more names setting up, I decided to buy VC on 1/17 which went down-to-sideways for a few days post-buy. That same day and on 1/18, I got stopped on both QSR and SLGN. I let XLE and VC work and by 1/23 I was up on both positions and green on balance; with that, I decided to buy VTYX and AXON on 1/23. Both worked immediately.</p>
+<p><u>2023 Reflection:</u> My portfolio saw some volatility early on in SLGN and QSR. These were the first warning signs that I didn’t take seriously enough. At that time, my largest position was XLE which began working immediately and looked promising. With 1 of 3 names working and more names setting up, I decided to buy VC on 1/17 which went down-to-sideways for a few days post-buy. That same day and on 1/18, I got stopped on both QSR and SLGN. I let XLE and VC work and by 1/23 I was up on both positions and green on balance; with that, I decided to buy VTYX and AXON on 1/23. Both worked immediately.</p>
 <p>I then added RXDX, IBB, and BIIB over the 26th and 27th. I got stopped on RXDX same day and sold a portion of VTYX for 2R on the 27th. Things were looking up for the most part. By 1/30 BIIB closed below 50-day and I sold half. IBB put me under pressure immediately but acted normal. On balance things were good until the end of the first week in February when I got stopped on ADEA, PRDO, and AXON. PRDO was the first real shot across the bow. Beautiful breakout that came all the way back.. all too familiar. Note: I tried buying more PRDO when it came in early morning post-b/o and it hit me harder when it underwent a pivot failure. This hasn’t worked and shouldn’t be done again. AXON was acting perfectly (though subject to pullback) until it broke over 14% in one day and stopped me out. This should have been a glaringly obvious sign to stop buying and go into protective mode. However, I kept buying and added FOLD and FRHC. A week later I added OIH, APH, and XENE. OIH was the only acceptable buy of those final 5. Otherwise, FOLD, FRHC, APH, and XENE were all <u>BAD BUYS</u> and can be attributed to FOMO. I need to be quicker to adjust and interpret the feedback the market is giving me.</p>
 <p>In hindsight I can see how the ‘breadth thrust’ and new wave of setups made me overly eager to get into the market. Both Mark’s were buying and admit to being down slightly (1-2%) so far this year. I’m right there with them, so I’m not too upset about the performance because I remained conservative and adhered to stops. But this latest run taught me that I’m not reflecting/synthesizing the market feedback enough each day. Hence, the advent of my STEM model and journal.</p>
 <p>Down about 2.5%, or ~$360, as of this writing.</p>
-<p><img src="figures/AXON.png" style="width:49.0%" /> <img src="figures/PRDO.png" style="width:49.0%" /></p>
+<p><a href="figures/AXON.png#round"><img src="figures/AXON.png#round" class="img-thumbnail" style="width:49.0%" /></a> <a href="figures/PRDO.png#round"><img src="figures/PRDO.png#round" class="img-thumbnail" style="width:49.0%" /></a></p>
 </div>
-</div>
+</details>
 
 
 

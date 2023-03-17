@@ -33,8 +33,9 @@ library(reactable)
 library(devtools)
 ```
 <br>
-
+<center>
 ### All Trades
+</center>
 
 <div class="box">
 

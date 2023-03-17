@@ -18,8 +18,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(shiny)
 ```
 
-## Minervini Private Access 
-
 #### Audio Recordings
 <span style="color:#FFFF99">*Q&A Session February 23, 2023*</span><br>
 

@@ -52,7 +52,6 @@ library(reactable)
 library(devtools)
 ```
 
-## Results
 Closed trades only.
 ```{r Main Dataframe, echo=FALSE, warning=FALSE, include=FALSE}
 df_open_pos1 <- trade_results_final %>% 
