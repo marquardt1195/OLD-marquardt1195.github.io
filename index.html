@@ -32,13 +32,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
-<script src="site_libs/react-17.0.0/react.min.js"></script>
-<script src="site_libs/react-17.0.0/react-dom.min.js"></script>
-<script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
-<link href="site_libs/reactable-0.4.3/reactable.css" rel="stylesheet" />
-<script src="site_libs/reactable-binding-0.4.3/reactable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -265,6 +258,13 @@ $(document).ready(function () {
     POSITIONS
   </a>
 </li>
+<li>
+  <a href="Trades.html">
+    <span class="far fa-file-alt"></span>
+     
+    TRADES
+  </a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="far fa-chart-bar"></span>
@@ -275,9 +275,6 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="Trades.html">Trades</a>
-    </li>
-    <li>
       <a href="Results.html">Results</a>
     </li>
     <li>
@@ -285,19 +282,25 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
-<li>
-  <a href="MPA.html">
-    <span class="fas fa-headphones-alt"></span>
-     
-    MPA
-  </a>
-</li>
-<li>
-  <a href="Models.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fas fa-seedling"></span>
      
-    MODELS
+    STUDY
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="PTA.html">PTA</a>
+    </li>
+    <li>
+      <a href="MPA.html">MPA</a>
+    </li>
+    <li>
+      <a href="Models.html">Models</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -316,7 +319,7 @@ $(document).ready(function () {
 
 
 <style type="text/css">
-  body{
+body{
   font-size: 11pt;
   font-family: Arial
 }
@@ -335,20 +338,12 @@ img[src$="#round"] {
 }
 </style>
 <div class="figure" style="text-align: right">
-<img src="figures/red.png" alt="Stock Feedback" width="12%" />
+<img src="figures/red.png" alt="Stock Feedback" width="11.5%" />
 <p class="caption">
 Stock Feedback
 </p>
 </div>
 <center>
-<div id="focus-list" class="section level3">
-<h3>FOCUS LIST</h3>
-<div class="box">
-<div id="htmlwidget-c02e3a0ff4ea577da21f" class="reactable html-widget " style="width:230px;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c02e3a0ff4ea577da21f">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"focus1":["AEHR","FSLR","ARRY","PODD","EPAC","AAON","MCHP","ACLS","HROW",null],"focus2":["ESP","TMUS","MSI","MNST","TH","TRI","AQUA","LMB","BOWL","CDNS"],"focus3":["ADI","STM","WING","COCO","REGN","ON","TXRH","RETA",null,null]},"columns":[{"id":"focus1","name":"-----","type":"character","align":"center","width":75},{"id":"focus2","name":"-----","type":"character","align":"center","width":75},{"id":"focus3","name":"-----","type":"character","align":"center","width":75}],"highlight":true,"bordered":true,"striped":true,"width":"230px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"4d8ab3c145e7757caa9ed954db57c306"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
-</div>
-<p><br></p>
-</div>
 <div id="weekly-charts-to-watch" class="section level3">
 <h3>WEEKLY CHARTS TO WATCH</h3>
 <center>
@@ -360,9 +355,18 @@ MSI, TRI, TSCO
 </center>
 <p><a href="figures/focus/MSI-weekly-focus.png#round"><img src="figures/focus/MSI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="MSI" /></a> <a href="figures/focus/TRI-weekly-focus.png#round"><img src="figures/focus/TRI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="TRI" /></a> <a href="figures/focus/TSCO-weekly-focus.png#round"><img src="figures/focus/TSCO-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="TSCO" /></a></p>
 <hr />
-</center>
 <p><img src="figures\Minervini-Tweet4.jpg#round" style="width:33.0%" /> <img src="figures\Marder-Tweet2.jpg#round" style="width:33.0%" /> <img src="figures\Minervini-Tweet2.jpg#round" style="width:33.0%" /></p>
 <p><img src="figures\Minervini-Tweet1.jpg#round" style="width:33.0%" /> <img src="figures\Marder-Tweet1.jpg#round" style="width:33.0%" /> <img src="figures\Trader.jpg#round" style="width:33.0%" /></p>
+<p><br></p>
+</div>
+<div id="stock-feedback-model" class="section level3">
+<h3>STOCK FEEDBACK MODEL</h3>
+<img src="figures/green.png" style="width:21.0%" alt="green" /><img src="figures/orange.png" style="width:21.0%" alt="orange" /><img src="figures/red.png" style="width:19.0%" alt="red" />
+</center>
+<p><br></p>
+<p><font color="green">GREEN</font>=Breakouts are working well, holding stops and following through - consider aggressive trading.</p>
+<p><font color="orange">ORANGE</font>=Market is selective and/or highly rotational. Reversals, squats, and pivot failures more likely - can trade but exercise caution.</p>
+<p><font color="red">RED</font>=Breakouts are not working well, risk is high - maximum caution advised!</p>
 </div>
 
 

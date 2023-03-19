@@ -6,6 +6,10 @@ output:
     toc_float: true
 ---
 <style type="text/css">
+body{
+  font-size: 11pt;
+  font-family: Arial
+}
 .box {
   height: auto;
   width: 87%;

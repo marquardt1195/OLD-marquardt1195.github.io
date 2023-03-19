@@ -306,7 +306,7 @@ After BO</i>
 ### <span style="color:#FFFF99">*IT*</span>
 
 <i> Before BO
-[![](figures/models/Personal/IT-daily-pre.png#round){.img-thumbnail}](figures/models/Personal/IT-daily-pre.png#round)
+[![](figures/models/Personal/IT_daily-pre.png#round){.img-thumbnail}](figures/models/Personal/IT_daily-pre.png#round)
 [![](figures/models/Personal/IT-weekly-pre.png#round){.img-thumbnail}](figures/models/Personal/IT-weekly-pre.png#round)
 
 After BO</i>
@@ -333,6 +333,30 @@ After BO</i>
 
 After BO</i>
 [![](figures/models/Personal/OXY-daily-post.png#round){.img-thumbnail}](figures/models/Personal/OXY-daily-post.png#round)
+
+***
+
+### <span style="color:#FFFF99">*VTYX*</span>
+
+<i> Before BO
+[![](figures/models/Personal/VTYX-daily-pre.png#round){.img-thumbnail}](figures/models/Personal/VTYX-daily-pre.png#round)
+[![](figures/models/Personal/VTYX-weekly-pre.png#round){.img-thumbnail}](figures/models/Personal/VTYX-weekly-pre.png#round)
+
+After BO</i>
+[![](figures/models/Personal/VTYX-daily-post.png#round){.img-thumbnail}](figures/models/Personal/VTYX-daily-post.png#round)
+[![](figures/models/Personal/VTYX-weekly-post.png#round){.img-thumbnail}](figures/models/Personal/VTYX-weekly-post.png#round)
+
+***
+
+### <span style="color:#FFFF99">*VC*</span>
+
+<i> Before BO
+[![](figures/models/Personal/VC-daily-pre.png#round){.img-thumbnail}](figures/models/Personal/VC-daily-pre.png#round)
+[![](figures/models/Personal/VC-weekly-pre.png#round){.img-thumbnail}](figures/models/Personal/VC-weekly-pre.png#round)
+
+After BO</i>
+[![](figures/models/Personal/VC-daily-post.png#round){.img-thumbnail}](figures/models/Personal/VC-daily-post.png#round)
+[![](figures/models/Personal/VC-weekly-post.png#round){.img-thumbnail}](figures/models/Personal/VC-weekly-post.png#round)
 
 ***
 
@@ -408,8 +432,8 @@ After BO</i>
 [![](figures/models/TAPlot/SEMR-weekly-pre.png#round){.img-thumbnail}](figures/models/TAPlot/SEMR-weekly-pre.png#round)
 
 After BO</i>
-![](figures/models/TAPlot/SEMR-daily-post.png#round){.img-thumbnail}](figures/models/TAPlot/SEMR-daily-post.png#round)
-![](figures/models/TAPlot/SEMR-weekly-post.png#round){.img-thumbnail}](figures/models/TAPlot/SEMR-weekly-post.png#round)
+[![](figures/models/TAPlot/SEMR-daily-post.png#round){.img-thumbnail}](figures/models/TAPlot/SEMR-daily-post.png#round)
+[![](figures/models/TAPlot/SEMR-weekly-post.png#round){.img-thumbnail}](figures/models/TAPlot/SEMR-weekly-post.png#round)
 
 ***
 

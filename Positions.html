@@ -265,6 +265,13 @@ $(document).ready(function () {
     POSITIONS
   </a>
 </li>
+<li>
+  <a href="Trades.html">
+    <span class="far fa-file-alt"></span>
+     
+    TRADES
+  </a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="far fa-chart-bar"></span>
@@ -275,9 +282,6 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="Trades.html">Trades</a>
-    </li>
-    <li>
       <a href="Results.html">Results</a>
     </li>
     <li>
@@ -285,19 +289,25 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
-<li>
-  <a href="MPA.html">
-    <span class="fas fa-headphones-alt"></span>
-     
-    MPA
-  </a>
-</li>
-<li>
-  <a href="Models.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fas fa-seedling"></span>
      
-    MODELS
+    STUDY
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="PTA.html">PTA</a>
+    </li>
+    <li>
+      <a href="MPA.html">MPA</a>
+    </li>
+    <li>
+      <a href="Models.html">Models</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -316,6 +326,10 @@ $(document).ready(function () {
 
 
 <style type="text/css">
+body{
+  font-size: 11pt;
+  font-family: Arial
+}
 .box {
   height: auto;
   width: 68%;
@@ -339,16 +353,16 @@ $(document).ready(function () {
 <div id="open-positions" class="section level2">
 <h2>Open Positions</h2>
 <div class="box">
-<div id="htmlwidget-6a04bacffd29257a65f7" class="reactable html-widget " style="width:600px;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-6a04bacffd29257a65f7">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"trade":[],"stock_name":[],"posn_size":[],"weight_avg_buy":[],"stop_loss_dollar":[],"stop_loss":[],"actual_drawdown":[]},"columns":[{"id":"trade","name":"#","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"width":50},{"id":"stock_name","name":"Stock","type":"character","align":"center","footerStyle":{"fontWeight":"bold"},"width":70},{"id":"posn_size","name":"Equity %","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2},"aggregated":{"digits":2}},"footer":"0.00","width":70},{"id":"weight_avg_buy","name":"Cost Basis","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2,"currency":"USD"},"aggregated":{"digits":2,"currency":"USD"}}},{"id":"stop_loss_dollar","name":"Stop Loss $","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"currency":"USD"},"aggregated":{"currency":"USD"}}},{"id":"stop_loss","name":"Stop Loss %","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2},"aggregated":{"digits":2}},"footer":"NaN"},{"id":"actual_drawdown","name":"Risk","type":"logical","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2,"currency":"USD"},"aggregated":{"digits":2,"currency":"USD"}},"footer":"$0.00","style":[]}],"highlight":true,"bordered":true,"striped":true,"width":"600px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"97871ce9bc83341517691008775bcc2f"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a0142bc6e4a4b925f495" class="reactable html-widget " style="width:600px;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a0142bc6e4a4b925f495">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"trade":[],"stock_name":[],"posn_size":[],"weight_avg_buy":[],"stop_loss_dollar":[],"stop_loss":[],"actual_drawdown":[]},"columns":[{"id":"trade","name":"#","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"width":50},{"id":"stock_name","name":"Stock","type":"character","align":"center","footerStyle":{"fontWeight":"bold"},"width":70},{"id":"posn_size","name":"Equity %","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2},"aggregated":{"digits":2}},"footer":"0.00","width":70},{"id":"weight_avg_buy","name":"Cost Basis","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2,"currency":"USD"},"aggregated":{"digits":2,"currency":"USD"}}},{"id":"stop_loss_dollar","name":"Stop Loss $","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"currency":"USD"},"aggregated":{"currency":"USD"}}},{"id":"stop_loss","name":"Stop Loss %","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2},"aggregated":{"digits":2}},"footer":"NaN"},{"id":"actual_drawdown","name":"Risk","type":"logical","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2,"currency":"USD"},"aggregated":{"digits":2,"currency":"USD"}},"footer":"$0.00","style":[]}],"highlight":true,"bordered":true,"striped":true,"width":"600px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"97871ce9bc83341517691008775bcc2f"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 <p><br></p>
 </div>
 <div id="recent-trades" class="section level2">
 <h2>Recent Trades</h2>
 <div class="box1">
-<div id="htmlwidget-b57010f04471ecf843c6" class="reactable html-widget " style="width:350px;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-b57010f04471ecf843c6">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"trade":[16,15,14,13,12,11,10,9,8,7],"stock_name":["XENE","APH","OIH","FRHC","FOLD","PRDO","ADEA","BIIB","IBB","RXDX"],"pl_percent":[-1.64060497308383,-0.747475369458143,-4.86325100992015,-2.44992295839753,-4.93966817496229,-7.0449907686328,-4.64643799472297,-2.93404537569306,-3.14717354355287,-6.42057237660722],"pl_dollar":[-9.60000000000002,-6.06950000000006,-48.2149999999999,-23.85,-32.75,-126.875,-52.8300000000002,-34.5032000000001,-116.481899999999,-38.7]},"columns":[{"id":"trade","name":"#","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"width":40},{"id":"stock_name","name":"Stock","type":"character","align":"center","footerStyle":{"fontWeight":"bold"}},{"id":"pl_percent","name":"P/L %","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2},"aggregated":{"digits":2}},"style":[{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"}]},{"id":"pl_dollar","name":"P/L $","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2,"currency":"USD"},"aggregated":{"digits":2,"currency":"USD"}},"footer":"$-489.87","style":[{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"}]}],"highlight":true,"bordered":true,"striped":true,"width":"350px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"798358649fccc8dd0f20b0bcb11ce059"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1fe723b750aa5577863" class="reactable html-widget " style="width:350px;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c1fe723b750aa5577863">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"trade":[16,15,14,13,12,11,10,9,8,7],"stock_name":["XENE","APH","OIH","FRHC","FOLD","PRDO","ADEA","BIIB","IBB","RXDX"],"pl_percent":[-1.64060497308383,-0.747475369458143,-4.86325100992015,-2.44992295839753,-4.93966817496229,-7.0449907686328,-4.64643799472297,-2.93404537569306,-3.14717354355287,-6.42057237660722],"pl_dollar":[-9.60000000000002,-6.06950000000006,-48.2149999999999,-23.85,-32.75,-126.875,-52.8300000000002,-34.5032000000001,-116.481899999999,-38.7]},"columns":[{"id":"trade","name":"#","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"width":40},{"id":"stock_name","name":"Stock","type":"character","align":"center","footerStyle":{"fontWeight":"bold"}},{"id":"pl_percent","name":"P/L %","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2},"aggregated":{"digits":2}},"style":[{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"}]},{"id":"pl_dollar","name":"P/L $","type":"numeric","align":"center","footerStyle":{"fontWeight":"bold"},"format":{"cell":{"digits":2,"currency":"USD"},"aggregated":{"digits":2,"currency":"USD"}},"footer":"$-489.87","style":[{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"},{"color":"#ff3333"}]}],"highlight":true,"bordered":true,"striped":true,"width":"350px","theme":{"color":"hsl(233, 9%, 87%)","backgroundColor":"hsl(233, 9%, 19%)","borderColor":"hsl(233, 9%, 21%)","stripedColor":"hsl(233, 12%, 22%)","highlightColor":"hsl(233, 12%, 24%)","inputStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"selectStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonHoverStyle":{"backgroundColor":"hsl(233, 9%, 25%)"},"pageButtonActiveStyle":{"backgroundColor":"hsl(233, 9%, 28%)"}},"dataKey":"798358649fccc8dd0f20b0bcb11ce059"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 10 most recent trades.
 </center>

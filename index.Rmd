@@ -5,7 +5,7 @@ output:
 ---
 
 <style type="text/css">
-  body{
+body{
   font-size: 11pt;
   font-family: Arial
 }
@@ -29,7 +29,7 @@ img[src$="#round"] {
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
-```{r STEM Model, echo=FALSE, out.width="12%", fig.cap="Stock Feedback", fig.align='right'}
+```{r STEM Model, echo=FALSE, out.width="11.5%", fig.cap="Stock Feedback", fig.align='right'}
 knitr::include_graphics("figures/red.png")
 ```
 
@@ -40,56 +40,7 @@ library(DT)
 library(data.table)
 library(tidyverse)
 ```
-
-
-```{r, echo=FALSE}
-focus1 <- c("AEHR", "FSLR", "ARRY", "PODD", "EPAC", "AAON", "MCHP", "ACLS", "HROW")
-focus2 <- c("ESP", "TMUS", "MSI", "MNST", "TH", "TRI", "AQUA", "LMB", "BOWL", "CDNS")
-focus3 <- c("ADI", "STM", "WING", "COCO", "REGN", "ON", "TXRH", "RETA")
-
-n <- max(length(focus1), length(focus2), length(focus3))
-
-focus4 <- data.table(focus1 = focus1[1:n], focus2 = focus2[1:n],focus3 = focus3[1:n])
-
-
-```
-
-
 <center>
-
-### FOCUS LIST
-
-<div class="box">
-```{r, echo=FALSE}
-reactable(focus4,
-            defaultColDef = colDef(
-            align = "center"),
-          columns = list(
-            focus1 = colDef(name = "-----", 
-                           width = 75),
-            focus2 = colDef(name = "-----", 
-                           width = 75),
-            focus3 = colDef(name = "-----", 
-                           width = 75)),
-          theme = reactableTheme(
-            color = "hsl(233, 9%, 87%)",
-            backgroundColor = "hsl(233, 9%, 19%)",
-            borderColor = "hsl(233, 9%, 21%)",
-            stripedColor = "hsl(233, 12%, 22%)",
-            highlightColor = "hsl(233, 12%, 24%)",
-            inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
-            selectStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
-            pageButtonHoverStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
-            pageButtonActiveStyle = list(backgroundColor = "hsl(233, 9%, 28%)")),
-          striped = TRUE,
-          highlight = TRUE,
-          bordered = TRUE,
-          width = 230)
-```
-
-</div>
-
-<br>
 
 ### WEEKLY CHARTS TO WATCH
 
@@ -105,9 +56,6 @@ reactable(focus4,
 
 ***
 
-
-</center>
-
 ![](figures\Minervini-Tweet4.jpg#round){width=33%}
 ![](figures\Marder-Tweet2.jpg#round){width=33%}
 ![](figures\Minervini-Tweet2.jpg#round){width=33%}
@@ -115,3 +63,17 @@ reactable(focus4,
 ![](figures\Minervini-Tweet1.jpg#round){width=33%}
 ![](figures\Marder-Tweet1.jpg#round){width=33%}
 ![](figures\Trader.jpg#round){width=33%}
+
+<br>
+
+### STOCK FEEDBACK MODEL
+
+![green](figures/green.png){width=21%}![orange](figures/orange.png){width=21%}![red](figures/red.png){width=19%}
+</center>
+<br>
+
+<font color="green">GREEN</font>=Breakouts are working well, holding stops and following through - consider aggressive trading.
+
+<font color="orange">ORANGE</font>=Market is selective and/or highly rotational. Reversals, squats, and pivot failures more likely - can trade but exercise caution.
+
+<font color="red">RED</font>=Breakouts are not working well, risk is high - maximum caution advised!

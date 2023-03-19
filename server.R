@@ -6,7 +6,7 @@ library(shinyalert)
 library(readr)
 library(plyr)
 
-data <- read.csv(sprintf("Trade_Results_%s.csv", Sys.Date()))
+data <- read.csv(sprintf("Trade_Results_2023-csv.csv", Sys.Date()))
 note <- tempfile()
 write_rds(data, "note.rds")
 
@@ -201,7 +201,7 @@ shinyServer(function(input, output, session){
   ### can download the table in csv
   output$Trich_csv<- downloadHandler(
     filename = function() {
-      paste("Trade_Results_", Sys.Date(), ".csv", sep="")
+      paste("Trade_Results_2023-csv.csv", sep="")
     },
     content = function(file) {
       write.csv(data.frame(vals_trich$Data), file, row.names = F)

@@ -65,9 +65,23 @@ knitr::include_graphics("figures/red.png")
 
 <div class="box">
 
+<span style="color:#FFFF99">*3/18/2023*</span>
+
+After doing some PTA (which will henceforth be logged [here](PTA.html)), noticing that many of my buys were spot-on but they were near 52-week highs. My buys sometimes marked the top or were at a breakout level that subsequently moved sideways in a volatile manner. Markets simply aren't bidding up most stocks into ATH or 52-week high territory; and if they do it doesn't last long. Few stocks have stood out and look obvious in hindsight, but with no real trend and the majority of setups not working, it's been very tough to make money all year. Made perfect buys on XLE, QSR, VC, VTYX, AXON, RXDX, IBB, BIIB, PRDO, and OIH. That's 10 of 16 buys that were excellent in hindsight. I've come a long way in my selection and timing. Money and portfolio management also making serious improvements. Down 2.31% on the year. Right there with both Mark's. Feeling no FOMO. 
+
+I did a great job managing my winning trades, despite only really having two. Held them for an average of 26 days! As of this writing, my numbers are: avg gain - 14.49%, avg loss - 3.54%, BA - 12.5%, W/L - 4.09, aW/L - 0.51. Results are telling me to be very selective and conservative. A few problems during this last rally: (1) reaction time to poor results in the market. (2) Over reacting to breath thrust indicator (3) Slight FOMO near the end of the rally. 
+
+A few stops were hit early on in names like SLGN, QSR, and RXDX. At that same time, I had 4 solid names with open profits: XLE, VC, VTYX, AXON. I leaned on these open profits and took on more risk. Next time, coming from 100% cash and a bear market, <b>I shouldn't lean so heavily on open profits coming from a correction unless the gains are locked in with a backstop.</b> In XLE, VC, AXON, I had no more than 7% gains (which I leaned on) and this later came back to bite me. XLE and AXON both stopped me out. After getting stopped out on SLGN, QSR, RXDX, XLE, and AXON with only VC and VTYX working, I should have held off on buying and let the names I had play out. Instead I kept on buying without making any real traction. On balance I was around break-even and I noticed more names setting up. For this reason, it's ok to continue buying, but I should have had more alarm bells going off and should have been SUPER selective and small. Buying should be very small and only the best of the bread. I think I was blinded by a couple of names that had double-digit profits, the breadth thrust, the general market, and optimism from both Mark's.. It ended up being that every name thereafter stopped me out and I lost money on every trade. FOLD and XENE were full-on FOMO trades.
+
+Overall, I'm happy with my trading, but a few too many names due to a slow reaction to stock feedback and slight FOMO took me down $200 or so more than I believe I should have lost. My solution is the advent of the daily journal entries and stock feedback model. I believe this will keep me more in-tune and force me to take a more honest and thorough review of my portfolio and the markets each day. 
+
+***
+
 <span style="color:#FFFF99">*3/17/2023*</span>
 
+Breadth terrible today, on a Friday. Nearly entire primary watchlist was red. VIX at 25. IWM huge distribution today and looks bad. Stocks volatile and nothing setup in a clean and orderly fashion. TXRH, VRTX, RETA, and TSCO only few that were decently set up and all retraced prior days advance. 
 
+Some names look like they could be ready by as early as next week if they act right: <b>SGML, FTNT, ISEE, BJ, AEHR, TH, RETA, MCHP, TSCO, MSI, TRI, VRTX.</b> TH was short but tight and moved to the downside on increased volatility today. 
 
 ***
 

@@ -1,0 +1,365 @@
+---
+output: 
+  html_document:
+    theme: darkly
+    toc: true
+    toc_float: true
+---
+
+<style type="text/css">
+  body{
+  font-size: 11pt;
+  font-family: Arial
+}
+img[src$="#round"] {
+  margin: 0px;
+  border-radius: 5px;
+}
+img:hover {
+  opacity: 0.9;
+}
+.box {
+  height: auto;
+  width: 100%;
+  background-color: hsl(233, 9%, 20%);
+  color: hsl(233, 9%, 95%);
+  padding: 30px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+details > summary {
+    list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: '▶️';
+}
+
+details[open] > summary::before {
+    content: '🔽';
+}
+
+details {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 2023 Q1
+  
+### <span style="color:#FFFF99">*SLGN*</span>
+
+<i> Before BO
+[![](figures/trades/2023/SLGN-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/SLGN-daily-pre.png#round)
+[![](figures/trades/2023/SLGN-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/SLGN-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*XLE*</span>
+
+<i> Before BO
+[![](figures/trades/2023/XLE-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/XLE-daily-pre.png#round)
+[![](figures/trades/2023/XLE-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/XLE-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*QSR*</span>
+
+<i> Before BO
+[![](figures/trades/2023/QSR-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/QSR-daily-pre.png#round)
+[![](figures/trades/2023/QSR-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/QSR-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*VC*</span>
+
+<i> Before BO
+[![](figures/trades/2023/VC-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/VC-daily-pre.png#round)
+[![](figures/trades/2023/VC-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/VC-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*VTYX*</span>
+
+<i> Before BO
+[![](figures/trades/2023/VTYX-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/VTYX-daily-pre.png#round)
+[![](figures/trades/2023/VTYX-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/VTYX-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*AXON*</span>
+
+<i> Before BO
+[![](figures/trades/2023/AXON-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/AXON-daily-pre.png#round)
+[![](figures/trades/2023/AXON-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/AXON-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*RXDX*</span>
+
+<i> Before BO
+[![](figures/trades/2023/RXDX-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/RXDX-daily-pre.png#round)
+[![](figures/trades/2023/RXDX-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/RXDX-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*IBB*</span>
+
+<i> Before BO
+[![](figures/trades/2023/IBB-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/IBB-daily-pre.png#round)
+[![](figures/trades/2023/IBB-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/IBB-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*BIIB*</span>
+
+<i> Before BO
+[![](figures/trades/2023/BIIB-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/BIIB-daily-pre.png#round)
+[![](figures/trades/2023/BIIB-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/BIIB-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*ADEA*</span>
+
+<i> Before BO
+[![](figures/trades/2023/ADEA-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/ADEA-daily-pre.png#round)
+[![](figures/trades/2023/ADEA-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/ADEA-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*PRDO*</span>
+
+<i> Before BO
+[![](figures/trades/2023/PRDO-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/PRDO-daily-pre.png#round)
+[![](figures/trades/2023/PRDO-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/PRDO-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*FOLD*</span>
+
+<i> Before BO
+[![](figures/trades/2023/FOLD-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/FOLD-daily-pre.png#round)
+[![](figures/trades/2023/FOLD-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/FOLD-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*FRHC*</span>
+
+<i> Before BO
+[![](figures/trades/2023/FRHC-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/FRHC-daily-pre.png#round)
+[![](figures/trades/2023/FRHC-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/FRHC-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*OIH*</span>
+
+<i> Before BO
+[![](figures/trades/2023/OIH-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/OIH-daily-pre.png#round)
+[![](figures/trades/2023/OIH-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/OIH-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*APH*</span>
+
+<i> Before BO
+[![](figures/trades/2023/APH-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/APH-daily-pre.png#round)
+[![](figures/trades/2023/APH-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/APH-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***
+
+### <span style="color:#FFFF99">*XENE*</span>
+
+<i> Before BO
+[![](figures/trades/2023/XENE-daily-pre.png#round){.img-thumbnail}](figures/trades/2023/XENE-daily-pre.png#round)
+[![](figures/trades/2023/XENE-weekly-pre.png#round){.img-thumbnail}](figures/trades/2023/XENE-weekly-pre.png#round)
+
+After BO</i>
+
+<details>
+<summary>
+ANALYSIS
+</summary>
+
+Analysis here
+
+</details>
+
+***

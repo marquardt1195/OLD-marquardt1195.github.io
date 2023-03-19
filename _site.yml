@@ -8,19 +8,22 @@ navbar:
     - icon: "fas fa-chart-line"
       text: "POSITIONS"
       href: Positions.html
+    - icon: "far fa-file-alt"  
+      text: "TRADES"
+      href: Trades.html
     - icon: "far fa-chart-bar"
       text: "ANALYTICS"
       menu:
-      - text: "Trades"
-        href: Trades.html
       - text: "Results"
         href: Results.html
       - text: "Plots"
         href: Plots.html
-    - icon: "fas fa-headphones-alt"
-      text: "MPA"
-      href: MPA.html
     - icon: "fas fa-seedling"
-      text: "MODELS"
-      href: Models.html
-output_dir: docs
+      text: "STUDY"
+      menu:
+      - text: "PTA"
+        href: PTA.html      
+      - text: "MPA"
+        href: MPA.html
+      - text: "Models"
+        href: Models.html
