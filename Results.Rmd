@@ -56,7 +56,6 @@ library(reactable)
 library(devtools)
 ```
 
-Closed trades only.
 ```{r Main Dataframe, echo=FALSE, warning=FALSE, include=FALSE}
 df_open_pos1 <- trade_results_final %>% 
   select(trade, stock_name, entries, 
@@ -253,25 +252,47 @@ df_total_table <- data.frame(closed_pl_dollar,
 
 
 
-#ATTEMPT TO CALCULATE AVG WIN AND LOSE HOLD TIMES WITHOUT USING HOLD TIME IN EXCEL
+#CALCULATES AVG WIN AND LOSE HOLD TIMES WITHOUT USING HOLD TIME IN EXCEL. COULD REMOVE THREE LAST COLUMNS IN CSV FILE.
+#CURRENTLY: WORKS PERFECTLY AS LONG AS ALL "STOCK NAME" FIELDS ARE FILLED OUT (THIS CAUSES OTHER ISSUES WITH "RESULTS").
+#ISSUE: IF EXIT DATE ISN'T FIRST OR LAST IN GROUP 'TRADE', OR THE SAME DATE AS THE FIRST, THEN THIS WILL CAUSE A MISCALCULATION OF THE HOLD TIME. CURRENTLY, THE CODE CANNOT HANDLE A EXIT DATE THAT IS NOT THE FIRST OR LAST IN THE GROUP, AND IS DIFFERENT THAN THE FIRST.
+
+
 #df_entry_date <- trade_results_final %>% 
 #    select(trade, stock_name, 
-#         entry_date, exit_date) %>% 
+#         entry_date, exit_date) %>%  
 #    group_by(trade) %>% 
-#    summarise("entry_dates" = tail(entry_date))
+#    filter(row_number()==1) %>% 
+#    select(trade, stock_name, entry_date)
 #
-#df_exit_date <- trade_results_final %>% 
+#df_exit_date1 <- trade_results_final %>% 
+#    select(trade, stock_name, exit_date) %>% 
+#    group_by(trade) %>%
+#    filter(row_number()==n()) %>% 
+#    select(trade, stock_name, exit_date)
+#
+#df_exit_date1$exit_date[is.na(df_exit_date1$exit_date)] <- 0
+#
+#df_exit_date2 <- trade_results_final %>% 
 #    select(trade, stock_name, 
 #         entry_date, exit_date) %>% 
-#    group_by(trade) %>% 
-#    summarise("exit_dates" = tail(exit_date))
+#    group_by(trade) %>%
+#    filter(row_number()==1) %>% 
+#    mutate("exit_date_2" = exit_date) %>% 
+#    select(trade, stock_name, exit_date_2) 
 #
-#df_hold_time <- merge(df_entry_date, df_exit_date) %>% 
-#  group_by(trade) %>% 
-#  drop_na() %>% 
-#  summarise("hold_time" = as.Date(as.character(df_hold_time$exit_dates), format = "%m/%d/%Y") -
-#           as.Date(as.character(df_hold_time$entry_dates), format = "%m/%d/%Y"))
+#df_exit_date <- merge(df_exit_date1, df_exit_date2, all = TRUE) %>%
+#     mutate("sell_date" = ifelse(exit_date==0, exit_date_2, exit_date)) %>% 
+#     arrange((trade)) %>% 
+#     select(trade, stock_name, sell_date)
 #
+#df_hold_time1 <- merge(df_entry_date, df_exit_date) %>% 
+#  arrange(trade)
+#
+#df_hold_time1$sell_date[is.na(df_hold_time1$sell_date)] <- 0
+#
+#df_hold_time <- df_hold_time1 %>% 
+#  mutate("hold_time" = as.Date(as.character(df_hold_time1$sell_date), format = #"%m/%d/%Y")-as.Date(as.character(df_hold_time1$entry_date), format = "%m/%d/%Y"))
+
 
 
 ```
@@ -476,7 +497,8 @@ df_monthly_data13 <- df_monthly_data1 %>% #Monthly avg hold time of winners
   select(trade,month, stock_name, pl_percent_trade, hold_time) %>%
   group_by(month) %>% 
   filter(pl_percent_trade > 0.5) %>% 
-  summarise("avg_win_hold" = mean(pl_percent_trade)) %>% 
+  drop_na() %>% 
+  summarise("avg_win_hold" = mean(hold_time)) %>% 
   arrange(match(month, month.name))
   
   
@@ -484,7 +506,8 @@ df_monthly_data14 <- df_monthly_data1 %>% #Monthly avg hold time of losers
   select(trade,month, stock_name, pl_percent_trade, hold_time) %>%
   group_by(month) %>% 
   filter(pl_percent_trade < -0.5) %>% 
-  summarise("avg_loss_hold" = mean(pl_percent_trade)) %>% 
+  drop_na() %>% 
+  summarise("avg_loss_hold" = mean(hold_time)) %>% 
   arrange(match(month, month.name))
 
 df_monthly_data <- merge(df_monthly_data2, df_monthly_data3, all = TRUE) %>% #MONTHLY DATAFRAME
@@ -496,6 +519,7 @@ df_monthly_data <- merge(df_monthly_data2, df_monthly_data3, all = TRUE) %>% #MO
                             arrange(match(month, month.name))
 
 df_monthly_data$monthly_percent_change[is.na(df_monthly_data$monthly_percent_change)] <- 0
+df_monthly_data$pl_dollar_month[is.na(df_monthly_data$pl_dollar_month)] <- 0
 
 df_nested_monthly_data <- merge(df_monthly_wins, df_monthly_losses, all = TRUE) %>% #MONTHLY NESTED DATAFRAME
                             merge(df_monthly_data10, all = TRUE) %>% 
@@ -612,3 +636,6 @@ reactable(df_nested1, outlined = TRUE,
 </div>
 
 </center>
+<br>
+
+CLOSED TRADES only. Does not include partials or open positions.

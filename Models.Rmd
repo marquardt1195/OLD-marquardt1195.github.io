@@ -242,6 +242,21 @@ After BO</i>
 
 ***
 
+## MPA 2023
+
+### <span style="color:#FFFF99">*MSI*</span>
+
+
+<i> Before BO
+[![](figures/models/MPA2023/MSI-daily-pre.png#round){.img-thumbnail}](figures/models/MPA2023/MSI-daily-pre.png#round)
+[![](figures/models/MPA2023/MSI-weekly-pre.png#round){.img-thumbnail}](figures/models/MPA2023/MSI-weekly-pre.png#round)
+
+After BO</i>
+[![](figures/models/MPA2023/MSI-daily-post.png#round){.img-thumbnail}](figures/models/MPA2023/MSI-daily-post.png#round)
+[![](figures/models/MPA2023/MSI-weekly-post.png#round){.img-thumbnail}](figures/models/MPA2023/MSI-weekly-post.png#round)
+
+***
+
 ## Personal Buys
 
 ### <span style="color:#FFFF99">*AMR*</span>

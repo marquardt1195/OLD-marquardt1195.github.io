@@ -86,9 +86,14 @@ df_nested_trades <- trade_results_final %>%
           entry_price, entry_date,
          weight_avg_buy, stop_loss_dollar, 
          stop_loss, exits, exit_price, exit_date, 
-         weight_avg_sell)
+         weight_avg_sell, hold_time)
 
-df_nested_trades[df_nested_trades == 0] <- NA
+df_nested_trades$entries[df_nested_trades$entries == 0] <- NA
+df_nested_trades$exits[df_nested_trades$exits == 0] <- NA
+df_nested_trades$entry_price[df_nested_trades$entry_price == 0] <- NA
+df_nested_trades$exit_price[df_nested_trades$exit_price == 0] <- NA
+
+
 ```
 
 ```{r All_closed_trades_table, echo=FALSE, warning=FALSE}
@@ -182,7 +187,8 @@ reactable(df_nested_trade1, outlined = TRUE,
                                width = 90),
             weight_avg_sell = colDef(name = "Avg Sell", 
                                 format = colFormat(currency = "USD"), 
-                                width = 70)
+                                width = 70),
+            hold_time = colDef(name = "Hold Time", width = 70)
           ),
           theme = reactableTheme(
             color = "hsl(233, 9%, 95%)",
@@ -200,9 +206,8 @@ reactable(df_nested_trade1, outlined = TRUE,
     )
 )
 ```
-Closed AND open positions. Includes partials.
-<br>
-
 </center>
 
 </div>
+
+Closed positions. Includes partials.

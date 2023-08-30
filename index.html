@@ -13,7 +13,7 @@
 
 <title>index.knit</title>
 
-<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -300,6 +300,9 @@ $(document).ready(function () {
     <li>
       <a href="Models.html">Models</a>
     </li>
+    <li>
+      <a href="Books.html">Books</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -320,14 +323,46 @@ $(document).ready(function () {
 
 <style type="text/css">
 body{
-  font-size: 11pt;
+  font-size: 12pt;
   font-family: Arial
 }
-.box {
+.column{
+  column-width: auto;
+  column-count: 2;
+  column-gap: 96px;
+}
+.box1 {
+  height: 100%;
+  width: auto;
+  background-color: hsl(233, 5%, 95%);
+  color: hsl(233, 9%, 95%);
+  padding: 20px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.box2 {
   height: auto;
-  width: 30%;
-  background-color: hsl(233, 9%, 19%);
-  color: hsl(233, 9%, 87%);
+  width: 100%;
+  background-color: #3d688f;
+  color: hsl(233, 9%, 95%);
+  padding: 20px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.box3 {
+  height: auto;
+  width: 80%;
+  background-color: #3d688f;
+  color: hsl(233, 9%, 95%);
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.box4 {
+  height: 100%;
+  width: 175%;
+  background-color: hsl(233, 5%, 95%);
+  color: hsl(233, 9%, 95%);
   padding: 10px;
   border: solid 1px black;
   border-radius: 10px;
@@ -338,35 +373,168 @@ img[src$="#round"] {
 }
 </style>
 <div class="figure" style="text-align: right">
-<img src="figures/red.png" alt="Stock Feedback" width="11.5%" />
+<img src="figures/orange.png" alt="Stock Feedback" width="11.5%" />
 <p class="caption">
 Stock Feedback
 </p>
 </div>
+<div class="box2">
+<div class="box1">
+<p><font color="black" size=3></p>
 <center>
-<div id="weekly-charts-to-watch" class="section level3">
-<h3>WEEKLY CHARTS TO WATCH</h3>
-<center>
-ADI, FTNT, MCHP
+<b><u>DAILY REMINDERS</u></b>
 </center>
-<p><a href="figures/focus/ADI-weekly-focus.png#round"><img src="figures/focus/ADI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="ADI" /></a> <a href="figures/focus/FTNT-weekly-focus.png#round"><img src="figures/focus/FTNT-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="FTNT" /></a> <a href="figures/focus/MCHP-weekly-focus.png#round"><img src="figures/focus/MCHP-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="MCHP" /></a></p>
-<center>
-MSI, TRI, TSCO
-</center>
-<p><a href="figures/focus/MSI-weekly-focus.png#round"><img src="figures/focus/MSI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="MSI" /></a> <a href="figures/focus/TRI-weekly-focus.png#round"><img src="figures/focus/TRI-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="TRI" /></a> <a href="figures/focus/TSCO-weekly-focus.png#round"><img src="figures/focus/TSCO-weekly-focus.png#round" class="img-thumbnail" style="width:33.0%" alt="TSCO" /></a></p>
-<hr />
-<p><img src="figures\Minervini-Tweet4.jpg#round" style="width:33.0%" /> <img src="figures\Marder-Tweet2.jpg#round" style="width:33.0%" /> <img src="figures\Minervini-Tweet2.jpg#round" style="width:33.0%" /></p>
-<p><img src="figures\Minervini-Tweet1.jpg#round" style="width:33.0%" /> <img src="figures\Marder-Tweet1.jpg#round" style="width:33.0%" /> <img src="figures\Trader.jpg#round" style="width:33.0%" /></p>
-<p><br></p>
+<p><b>(1)</b> The point of a strategy is to prompt you to take action in
+the market. Nothing else should be responsible for prompting you to take
+action. If you take action without first being prompted, either you
+don’t believe in the strategy or you don’t have the discipline to follow
+it. Which is it?</p>
+<p><b>(2)</b> Your strategy has been time-tested for decades by proven
+champions in the market. You already have everything you need to
+succeed.</p>
+<p><b>(3)</b> Do you know how to follow the strategy Mark has outlined?
+Then simply execute and interpret the feedback. If you stretch the
+rules, you can’t trust the fidelity of your results. YOU MUST
+CONSISTENTLY APPLY THE DISCIPLINE.</p>
+<p><b>(4)</b> TRUST the strategy. FOLLOW the strategy. CONSISTENTLY
+APPLY the strategy. It’s the only reference point you have in the
+market.</p>
+<p><b>(5)</b> NO FOMO. This is a business. What business would succeed
+if the owner was giving into short-term desires/excitement instead of
+executing according to plan? Would you work for him/her?</p>
+<p><b>(6)</b> How have trades been going?</p>
+<p><b>(7)</b> Do you know how to follow the strategy Mark has outlined?
+Then simply execute and interpret the feedback. If you stretch the
+rules, you can’t trust the fidelity of your results. YOU MUST
+CONSISTENTLY APPLY THE DISCIPLINE.</p>
+<p></font></p>
 </div>
+</div>
+<center>
+<div class="box3">
+<center>
+<b>DAILY CHECKLIST</b>
+</center>
+<div class="column">
+<div class="box4">
+<p><font color="black" size=3></p>
+<p><b>(1)</b> Place/adjust all stops</p>
+<p><b>(2)</b> Screen Primary list</p>
+<p><b>(3)</b> Run Daily scans</p>
+<p><b>(4)</b> Organize Focus list</p>
+<p><b>(5)</b> Set buy stop limits</p>
+<p></font></p>
+</div>
+<div class="box4">
+<p><font color="black" size=3></p>
+<p><b>MARKET HEALTH</b> <br></p>
+<p>General Market ✅</p>
+<p>Up/Down Volume 😐</p>
+<p>New Highs/New Lows ✅</p>
+<p>Stock Participation 😐</p>
+<p></font></p>
+</div>
+</div>
+</div>
+</center>
+<hr />
+<center>
+<div class="box3">
+<center>
+<b>WEEKEND CHECKLIST</b>
+</center>
+<div class="column">
+<div class="box4">
+<p><font color="black" size=3></p>
+<p>Run Weekend Scans</p>
+Analyze Market Health
+<ul>
+<li>
+General Market
+</li>
+<li>
+Up/Down Volume
+</li>
+<li>
+New Highs/Lows
+</li>
+<li>
+Participation
+</li>
+<li>
+RSI
+</li>
+<li>
+Put/Call
+</li>
+</ul>
+<p>Assess Risk Profile</p>
+<p>MPA Weekend Study Session</p>
+<p></font></p>
+</div>
+<div class="box4">
+<p><font color="black" size=3></p>
+<p><b>Q&amp;A</b> <br></p>
+<p>Feedback from open positions?</p>
+<p>Feedback from Buy List?</p>
+<p>Feedback from stops?</p>
+<p>Current market message?</p>
+<p>Dominant theme(s)?</p>
+<p>Lots of setups?</p>
+<p>Stock Feedback model?</p>
+<p></font></p>
+</div>
+</div>
+</div>
+</center>
+<hr />
+<p><u>BEAR MARKET RULES:</u></p>
+<ol style="list-style-type: decimal">
+<li>Priority #1 is financing risk. Do it ASAP. Forget average gain!</li>
+<li>Trouble with Rule #1? Then sit out.</li>
+<li>Think of your portfolio as ‘blocks’, able to be divided by 4, 2, or
+1. (view posn sizing above)</li>
+<li>Tighten stops. What % are b/o’s getting on average?</li>
+<li>Buys must be spot-on.</li>
+<li>No FOMO from indexes.</li>
+<li>Only lean on profits that are booked or back stopped.</li>
+</ol>
+<center>
+<p><a href="figures/tutorials/position_sizing_template.png#round"><img
+src="figures/tutorials/position_sizing_template.png#round"
+class="img-thumbnail" alt="Position_Sizing_Template" /></a></p>
+</center>
+<hr />
+<center>
+<p><img src="figures\Minervini-TweetResponse.jpg#round"
+style="width:45.0%" /> <img src="figures\minervini-epic-tweet.png#round"
+style="width:45.0%" /> <br></p>
+<p><img src="figures\Marder-Tweet1.jpg#round" style="width:40.0%" />
+<img src="figures\Minervini-Tweet2.jpg#round" style="width:40.0%" />
+<br></p>
+<p><img src="figures\Trader.jpg#round" style="width:40.0%" /></p>
+<hr />
 <div id="stock-feedback-model" class="section level3">
 <h3>STOCK FEEDBACK MODEL</h3>
-<img src="figures/green.png" style="width:21.0%" alt="green" /><img src="figures/orange.png" style="width:21.0%" alt="orange" /><img src="figures/red.png" style="width:19.0%" alt="red" />
+<img src="figures/green.png" style="width:21.0%" alt="green" /><img
+src="figures/orange.png" style="width:21.0%" alt="orange" /><img
+src="figures/red.png" style="width:19.0%" alt="red" />
 </center>
 <p><br></p>
-<p><font color="green">GREEN</font>=Breakouts are working well, holding stops and following through - consider aggressive trading.</p>
-<p><font color="orange">ORANGE</font>=Market is selective and/or highly rotational. Reversals, squats, and pivot failures more likely - can trade but exercise caution.</p>
-<p><font color="red">RED</font>=Breakouts are not working well, risk is high - maximum caution advised!</p>
+<p><font color="green">GREEN</font>=Breakouts are working well, holding
+stops and following through - consider aggressive trading.</p>
+<p><font color="orange">ORANGE</font>=Market is selective and/or highly
+rotational. Reversals, squats, and pivot failures more likely - can
+trade but exercise caution.</p>
+<ol style="list-style-type: decimal">
+<li>What’s the theme? Avg gain of positions?</li>
+<li>FINANCE RISK near avg gain.</li>
+</ol>
+<p><font color="red">RED</font>=Breakouts are not working well, risk is
+high - maximum caution advised! <br></p>
+<ol style="list-style-type: decimal">
+<li>Priority #1 - Finance risk ASAP (1:1).</li>
+</ol>
 </div>
 
 
