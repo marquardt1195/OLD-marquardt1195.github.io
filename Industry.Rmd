@@ -4,28 +4,78 @@ output:
     theme: darkly
     toc: true
     toc_float: true
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
-#knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r Library, echo=FALSE, include=FALSE}
-#library(quantmod)
-#library(TTR)
-#library(dplyr)
-#library(kableExtra)
-#library(reactable)
-#library(tidyr)
+library(quantmod)
+library(TTR)
+library(dplyr)
+library(kableExtra)
+library(reactable)
+library(tidyr)
 ```
 
 ```{r Index, echo=FALSE, include=FALSE}
-#spy <- getSymbols('spy', src='yahoo', auto.assign=FALSE)
-#ndx <- getSymbols('ndx', src='yahoo', auto.assign=FALSE)
-#iwm <- getSymbols('iwm', src='yahoo', auto.assign=FALSE)
-#ffty <- getSymbols('ffty', src='yahoo', auto.assign=FALSE)
+
+#symbols <- stockSymbols()
+#symbols <- symbols[,1]
+#all <- getSymbols('v1', source='yahoo', auto.assign = FALSE)
+
+## cool progress bar to see the % of completion
+#n <- length(symbols)
+#pb <- txtProgressBar(min = 0, max = n, style=3)
+#
+#
+## Actual loop: 
+#for(i in 1:length(symbols)) {
+#  symbols[i]-> symbol
+## specify the "from" date to desired start date
+#  tryit <- try(getSymbols(symbol,from="2014-01-01", src='yahoo'))
+#  if(inherits(tryit, "try-error")){
+#    i <- i+1
+#  } else {
+#  # specify the "from" date to desired start date
+#  data <- getSymbols(symbol, from="2014-01-01", src='yahoo')
+#  dataset <- merge(dataset, Ad(get(symbols[i])))
+#  rm(symbol)
+#  }
+#  setTxtProgressBar(pb, i)
+#}
 ```
+
+
+```{r}
+#dataset<- xts()
+```
+
+
+```{r}
+# cool progress bar to see the % of completion
+#n <- length(symbols)
+#pb <- txtProgressBar(min = 0, max = n, style=3)
+#
+#
+## Actual loop: 
+#for(i in 1:length(symbols)) {
+#  symbols[i]-> symbol
+## specify the "from" date to desired start date
+#  tryit <- try(getSymbols(symbol,from="2014-01-01", src='yahoo'))
+#  if(inherits(tryit, "try-error")){
+#    i <- i+1
+#  } else {
+#  # specify the "from" date to desired start date
+#  data <- getSymbols(symbol, from="2014-01-01", src='yahoo')
+#  dataset <- merge(dataset, Ad(get(symbols[i])))
+#  rm(symbol)
+#  }
+#  setTxtProgressBar(pb, i)
+#}
+```
+
 
 ```{r Sector, echo=FALSE, include=FALSE}
 #consider adding overall sectors and leading industry groups & LEADING STOCKS

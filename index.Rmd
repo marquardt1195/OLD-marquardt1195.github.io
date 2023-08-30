@@ -73,29 +73,32 @@ library(data.table)
 library(tidyverse)
 library(shiny)
 ```
-<div class="box2">
-<div class="box1">
-<font color="black" size=3>
 
-<center><b><u>DAILY REMINDERS</u></b></center>
+```{r, echo=FALSE, include=FALSE}
+#<div class="box2">
+#<div class="box1">
+#<font color="black" size=3>
+#<center><b><u>DAILY REMINDERS</u></b></center>
+#
+#<b>(1)</b> The point of a strategy is to prompt you to take action in the market. Nothing else should be responsible for prompting you to take action. If you take action without first being prompted, either you don't believe in the strategy or you don't have the discipline to follow it. Which is it?
 
-<b>(1)</b> The point of a strategy is to prompt you to take action in the market. Nothing else should be responsible for prompting you to take action. If you take action without first being prompted, either you don't believe in the strategy or you don't have the discipline to follow it. Which is it?
+#<b>(2)</b> Your strategy has been time-tested for decades by proven champions in the market. You already have everything you need to succeed.
 
-<b>(2)</b> Your strategy has been time-tested for decades by proven champions in the market. You already have everything you need to succeed.
+#<b>(3)</b> Do you know how to follow the strategy Mark has outlined? Then simply execute and interpret the feedback. If you stretch the rules, you can't trust the fidelity of your results. YOU MUST CONSISTENTLY APPLY THE DISCIPLINE.
 
-<b>(3)</b> Do you know how to follow the strategy Mark has outlined? Then simply execute and interpret the feedback. If you stretch the rules, you can't trust the fidelity of your results. YOU MUST CONSISTENTLY APPLY THE DISCIPLINE.
+#<b>(4)</b> TRUST the strategy. FOLLOW the strategy. CONSISTENTLY APPLY the strategy. It's the only reference point you have in the market. 
 
-<b>(4)</b> TRUST the strategy. FOLLOW the strategy. CONSISTENTLY APPLY the strategy. It's the only reference point you have in the market. 
+#<b>(5)</b> NO FOMO. This is a business. What business would succeed if the owner was giving into short-term desires/excitement instead of executing according to plan? Would you work for him/her?
 
-<b>(5)</b> NO FOMO. This is a business. What business would succeed if the owner was giving into short-term desires/excitement instead of executing according to plan? Would you work for him/her?
+#<b>(6)</b> How have trades been going?
 
-<b>(6)</b> How have trades been going?
+#<b>(7)</b> Do you know how to follow the strategy Mark has outlined? Then simply execute and interpret the feedback. If you stretch the rules, you can't trust the fidelity of your results. YOU MUST CONSISTENTLY APPLY THE DISCIPLINE.
 
-<b>(7)</b> Do you know how to follow the strategy Mark has outlined? Then simply execute and interpret the feedback. If you stretch the rules, you can't trust the fidelity of your results. YOU MUST CONSISTENTLY APPLY THE DISCIPLINE.
+#</font>
+#</div>
+#</div>
+```
 
-</font>
-</div>
-</div>
 
 <center>
 <div class="box3">
@@ -146,7 +149,6 @@ Stock Participation &#128528;
 
 </center>
 
-***
 
 <center>
 <div class="box3">
@@ -219,20 +221,23 @@ Stock Feedback model?
 
 [![Position_Sizing_Template](figures/tutorials/position_sizing_template.png#round){.img-thumbnail}](figures/tutorials/position_sizing_template.png#round)
 
-</center>
 
-***
+```{r, echo=FALSE, include=FALSE}
+#Ignore
 
-<center>
-![](figures\Minervini-TweetResponse.jpg#round){width=45%}
-![](figures\minervini-epic-tweet.png#round){width=45%}
-<br>
+#<center>
+#![](figures\Minervini-TweetResponse.jpg#round){width=45%}
+#![](figures\minervini-epic-tweet.png#round){width=45%}
+#<br>
 
-![](figures\Marder-Tweet1.jpg#round){width=40%}
-![](figures\Minervini-Tweet2.jpg#round){width=40%}
-<br>
+#![](figures\Marder-Tweet1.jpg#round){width=40%}
+#![](figures\Minervini-Tweet2.jpg#round){width=40%}
+#<br>
 
-![](figures\Trader.jpg#round){width=40%}
+#![](figures\Trader.jpg#round){width=40%}
+```
+
+
 
 ***
 

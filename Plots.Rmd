@@ -22,7 +22,7 @@ body{
 </style>
 
 ```{r, include=FALSE}
-trade_results_final <- read.csv("Trade_Results_2023-csv.csv", na.strings = c("", "NA"))
+trade_results_final <- read.csv("Trade_Results_2023-copy-csv.csv", na.strings = c("", "NA"))
 ```
 
 ```{r, include = FALSE}
@@ -185,10 +185,6 @@ ggplot() +
 
 <br>
 
-<kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Marder-Tweet1.jpg){width=33%}</kbd><kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Minervini-Tweet1.jpg){width=33%}</kbd><kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Minervini-Tweet2.jpg){width=31%}</kbd>
-
-<br>
-<br>
 
 ### Principal Balance
 
@@ -333,11 +329,3 @@ ggplot() +
     )
 ```
 </div>
-
-<br>
-<br>
-
-<kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Minervini-Tweet4.jpg){width=30%}</kbd><kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Marder-Tweet2.jpg){width=35%}</kbd><kbd>![](C:\Users\marqu\Desktop\Stocks\Educational\Figures\Trader.jpg){width=32%}</kbd>
-
-<br>
-<br>
